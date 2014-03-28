@@ -7,7 +7,7 @@
     "turbo-javascript:end-line",
     "turbo-javascript:end-new-line"
   ],
-  "repository": "https://github.com/extrabacon/turbo-javascript",
+  "repository": "https://github.com/extrabacon/atom-turbo-javascript",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
