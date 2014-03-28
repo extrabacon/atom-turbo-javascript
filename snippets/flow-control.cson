@@ -1,0 +1,45 @@
+".source.js":
+  "if statement":
+    prefix: "if"
+    body: """
+    if (${1:condition}) {
+      ${0}
+    }
+    """
+  "else statement":
+    prefix: "el"
+    body: """
+    else {
+      ${0}
+    }
+    """
+  "else if statement":
+    prefix: "ei"
+    body: """
+    else if (${1:condition}) {
+      ${0}
+    }
+    """
+  "for loop":
+    prefix: "fl"
+    body: """
+    for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
+      ${0}
+    });
+    """
+  "for in loop":
+    prefix: "fi"
+    body: """
+    for (var ${1:key} in ${2:source}) {
+      if (${2:source}.hasOwnProperty(${1:key})) {
+        ${0}
+      }
+    });
+    """
+  "while loop":
+    prefix: "wl"
+    body: """
+    while (${1:condition}) {
+      ${0}
+    }
+    """

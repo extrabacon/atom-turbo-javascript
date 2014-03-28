@@ -1,0 +1,17 @@
+{
+  "name": "turbo-javascript",
+  "main": "./lib/turbo-javascript",
+  "version": "0.0.1",
+  "description": "A collection of commands and snippets for optimizing Javascript development productivity",
+  "activationEvents": [
+    "turbo-javascript:end-line",
+    "turbo-javascript:end-new-line"
+  ],
+  "repository": "https://github.com/extrabacon/turbo-javascript",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,11 @@
+".source.js":
+  "process.nextTick":
+    prefix: "nt"
+    body: """
+    process.nextTick(function () {
+      ${0}
+    });
+    """
+  "process.exit":
+    prefix: "pe"
+    body: "process.exit(${1:code});"

@@ -1,0 +1,16 @@
+".source.js":
+  "assert.equal":
+    prefix: "ase"
+    body: """
+    assert.equal(${1:actual}, ${2:expected});
+    """
+  "assert.notEqual":
+    prefix: "asn"
+    body: """
+    assert.notEqual(${1:actual}, ${2:expected});
+    """
+  "assert.deepEqual":
+    prefix: "asd"
+    body: """
+    assert.deepEqual(${1:actual}, ${2:expected});
+    """

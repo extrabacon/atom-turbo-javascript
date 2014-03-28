@@ -1,0 +1,41 @@
+".source.js":
+  "forEach loop":
+    prefix: "fe"
+    body: """
+    ${1:iterable}.forEach(function (${2:item}) {
+      ${0}
+    });
+    """
+  "Chain forEach":
+    prefix: ".fe"
+    body: ".forEach(function (${1:item}) {${0}})"
+  "map":
+    prefix: "map"
+    body: """
+    ${1:iterable}.map(function (${2:item}) {
+      ${0}
+    });
+    """
+  "Chain map":
+    prefix: ".map"
+    body: ".map(function (${1:item}) {${0}})"
+  "reduce":
+    prefix: "reduce"
+    body: """
+    ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
+      ${0}
+    }${4:, initial});
+    """
+  "Chain reduce":
+    prefix: ".reduce"
+    body: ".reduce(function (${1:previous}, ${2:current}) {${0}}${4:, initial})"
+  "filter":
+    prefix: "filter"
+    body: """
+    ${1:iterable}.filter(function (${2:item}) {
+      ${0}
+    });
+    """
+  "Chain filter":
+    prefix: ".filter"
+    body: ".filter(function (${1:item}) {${0}})"

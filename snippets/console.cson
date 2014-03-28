@@ -1,0 +1,10 @@
+".source.js":
+  "console.log":
+    prefix: "cl"
+    body: "console.log(${1});"
+  "console.error":
+    prefix: "ce"
+    body: "console.error(${1});"
+  "console.dir":
+    prefix: "cd"
+    body: "console.dir(${1});"

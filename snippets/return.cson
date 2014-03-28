@@ -1,0 +1,19 @@
+".source.js":
+  "return":
+    prefix: "r"
+    body: "return"
+  "return this":
+    prefix: "rth"
+    body: "return this;"
+  "return null":
+    prefix: "rn"
+    body: "return null;"
+  "return true":
+    prefix: "rt"
+    body: "return true;"
+  "return false":
+    prefix: "rf"
+    body: "return false;"
+  "return 0":
+    prefix: "r0"
+    body: "return 0;"

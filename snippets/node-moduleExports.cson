@@ -1,0 +1,7 @@
+".source.js":
+  "exports.member":
+    prefix: "ex"
+    body: "exports.${1:name} = ${2:value};"
+  "module.exports":
+    prefix: "me"
+    body: "module.exports = ${1:name};"
