@@ -20,17 +20,17 @@ Snippets are optimized to be short and easy to remember. Some snippets are "chai
 
 Quickly log stuff to the console
 
-* `cl` console.log
+##### `cl` console.log
 ```js
 console.log(${0});
 ```
 
-* `ce` console.error
+##### `ce` console.error
 ```js
 console.error(${0});
 ```
 
-* `cw` console.warn
+##### `cw` console.warn
 ```js
 console.warn(${0});
 ```
@@ -39,35 +39,35 @@ console.warn(${0});
 
 Fast expansion for common flow control statements
 
-* `if` if statement
+##### `if` if statement
 ```js
 if (${1:condition}) {
   ${0}
 }
 ```
 
-* `el` else statement
+##### `el` else statement
 ```js
 else {
   ${0}
 }
 ```
 
-* `ei` else if statement
+##### `ei` else if statement
 ```js
 else if (${1:condition}) {
   ${0}
 }
 ```
 
-* `fl` for loop
+##### `fl` for loop
 ```js
 for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
   ${0}
 });
 ```
 
-* `fi` for in loop
+##### `fi` for in loop
 ```js
 for (var ${1:key} in ${2:source}) {
   if (${2:source}.hasOwnProperty(${1:key})) {
@@ -76,7 +76,7 @@ for (var ${1:key} in ${2:source}) {
 }
 ```
 
-* `wl` while loop
+##### `wl` while loop
 ```js
 while (${1:condition}) {
   ${0}
@@ -87,36 +87,36 @@ while (${1:condition}) {
 
 Declare and manipulate functions with ease
 
-* `f` single-line anonymous function
+##### `f` single-line anonymous function
 ```js
 function (${1:arguments}) {${0}}
 ```
 
-* `fn` named function
+##### `fn` named function
 ```js
 function ${1:name}(${2:arguments}) {
   ${0}
 }
 ```
 
-* `iife` immediately-invoked function expression
+##### `iife` immediately-invoked function expression
 ```js
 (function (${1:arguments}) {
   ${0}
 })(${2});
 ```
 
-* `fa` function apply
+##### `fa` function apply
 ```js
 ${1:fn}.apply(${2:this}, ${3:arguments})
 ```
 
-* `fc` function call
+##### `fc` function call
 ```js
 ${1:fn}.call(${2:this}, ${3:arguments})
 ```
 
-* `fb` function bind
+##### `fb` function bind
 ```js
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
@@ -125,28 +125,28 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 
 Quickly add functional-style call chains with Javascript Array.prototype methods. All iterable snippets have a chainable version. To use the chain-optimized version, type a "." before the snippet. For example, `.map` will render `.map(function (${1:item}) {${0}})` instead of the full version.
 
-* `fe` for each loop (chainable)
+##### `fe` for each loop (chainable)
 ```js
 ${1:iterable}.forEach(function (${2:item}) {
   ${0}
 });
 ```
 
-* `map` map function (chainable)
+##### `map` map function (chainable)
 ```js
 ${1:iterable}.map(function (${2:item}) {
   ${0}
 });
 ```
 
-* `reduce` reduce function (chainable)
+##### `reduce` reduce function (chainable)
 ```js
 ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
   ${0}
 }${4:, initial});
 ```
 
-* `filter` filter function (chainable)
+##### `filter` filter function (chainable)
 ```js
 ${1:iterable}.filter(function (${2:item}) {
   ${0}
@@ -157,29 +157,29 @@ ${1:iterable}.filter(function (${2:item}) {
 
 Shortcuts for dealing with types, objects, classes and inheritance.
 
-* `:` key/value pair
+##### `:` key/value pair
 ```js
 ${1:key}: ${2:'value'}
 ```
 
-* `proto` prototype method (chainable)
+##### `proto` prototype method (chainable)
 ```js
 ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
   ${0}
 }
 ```
 
-* `tof` typeof obj === 'TypeName'
+##### `tof` typeof obj === 'TypeName'
 ```js
 typeof ${1:source} === '${2:undefined}'
 ```
 
-* `iof` obj instanceof Constructor
+##### `iof` obj instanceof Constructor
 ```js
 ${1:source} instanceof ${2:Object}
 ```
 
-* Built-in types shortcuts:
+##### Built-in types shortcuts:
   * `st` String
   * `nu` Number
   * `ob` Object
@@ -191,32 +191,32 @@ ${1:source} instanceof ${2:Object}
 
 Quickly return values from your functions with these commonly used return statements
 
-* `r` return
+##### `r` return
 ```js
 return
 ```
 
-* `rth` return this
+##### `rth` return this
 ```js
 return this;
 ```
 
-* `rn` return null
+##### `rn` return null
 ```js
 return null;
 ```
 
-* `rt` return true
+##### `rt` return true
 ```js
 return true;
 ```
 
-* `rf` return false
+##### `rf` return false
 ```js
 return false;
 ```
 
-* `r0` return 0
+##### `r0` return 0
 ```js
 return 0;
 ```
@@ -225,14 +225,14 @@ return 0;
 
 Using Promises/A+? Quickly connect your promise flow with the following snippets.
 
-* `then` Promise.then (chainable)
+##### `then` Promise.then (chainable)
 ```js
 ${1:promise}.then(function (${2:value}) {
   ${0}
 });
 ```
 
-* `catch` Promise.catch (chainable)
+##### `catch` Promise.catch (chainable)
 ```js
 ${1:promise}.catch(function (${2:err}) {
   ${0}
@@ -243,19 +243,19 @@ ${1:promise}.catch(function (${2:err}) {
 
 BDD-style testing shortcuts for Mocha, Jasmine and others
 
-* `desc` describe
+##### `desc` describe
 ```js
 describe('${1:description}', function () {
   ${0}
 });
 ```
-* `its` synchronous "it"
+##### `its` synchronous "it"
 ```js
 it('${1:description}', function () {
   ${0}
 });
 ```
-* `ita` asynchronous "it"
+##### `ita` asynchronous "it"
 ```js
 it('${1:description}', function (done) {
   ${0}
@@ -266,14 +266,14 @@ it('${1:description}', function (done) {
 
 Timer shortcuts
 
-* `st` setTimeout
+##### `st` setTimeout
 ```js
 setTimeout(function () {
   ${0}
 }, ${1:delay});
 ```
 
-* `si` setInterval
+##### `si` setInterval
 ```js
 setTimeout(function () {
   ${0}
@@ -284,46 +284,46 @@ setTimeout(function () {
 
 The following snippets apply only within Node.js or scripts with Browserify
 
-* `cb` Node.js style callback
+##### `cb` Node.js style callback
 ```js
 function (err${1:, value}) {${0}}
 ```
 
-* `re` Require a module
+##### `re` Require a module
 ```js
 require('${1:module}');
 ```
 
-* `ex` Export member
+##### `ex` Export member
 ```js
 exports.${1:name} = ${2:value};
 ```
 
-* `me` module.exports
+##### `me` module.exports
 ```js
 module.exports = ${1:name};
 ```
 
-* `on` Attach an event handler (chainable)
+##### `on` Attach an event handler (chainable)
 ```js
 ${1:emitter}.on('${2:event}', function (${3:arguments}) {
   ${0}
 });
 ```
 
-* `nt` Process.nextTick
+##### `nt` Process.nextTick
 ```js
 process.nextTick(function () {
   ${0}
 });
 ```
 
-* `pe` Process.exit
+##### `pe` Process.exit
 ```js
 process.exit(${1:code});
 ```
 
-* Asserts
+##### Asserts
   * `ase` assert.equal
   * `asn` assert.notEqual
   * `asd` assert.deepEqual
