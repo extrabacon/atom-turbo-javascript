@@ -34,7 +34,7 @@
       if (${2:source}.hasOwnProperty(${1:key})) {
         ${0}
       }
-    });
+    }
     """
   "while loop":
     prefix: "wl"

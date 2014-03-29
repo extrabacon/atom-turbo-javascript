@@ -9,7 +9,7 @@
       ${0}
     }
     """
-  "prototype method":
+  "Chain prototype method":
     prefix: ".proto"
     body: """
     .prototype.${2:methodName} = function (${3:arguments}) {
