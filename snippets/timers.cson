@@ -3,13 +3,13 @@
     prefix: "st"
     body: """
     setTimeout(function () {
-      ${0}
+    \t${0}
     }, ${1:delay});
     """
   "setInterval":
     prefix: "si"
     body: """
     setInterval(function () {
-      ${0}
+    \t${0}
     }, ${1:delay});
     """

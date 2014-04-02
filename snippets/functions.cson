@@ -6,14 +6,14 @@
     prefix: "fn"
     body: """
     function ${1:name}(${2:arguments}) {
-      ${0}
+    \t${0}
     }
     """
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
     (function (${1:arguments}) {
-      ${0}
+    \t${0}
     })(${2});
     """
   "function apply":

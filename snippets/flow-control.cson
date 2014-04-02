@@ -3,43 +3,52 @@
     prefix: "if"
     body: """
     if (${1:condition}) {
-      ${0}
+    \t${0}
     }
     """
   "else statement":
     prefix: "el"
     body: """
     else {
-      ${0}
+    \t${0}
+    }
+    """
+  "if/else statement":
+    prefix: "ife"
+    body: """
+    if (${1:condition}) {
+    \t${0}
+    } else {
+    \t
     }
     """
   "else if statement":
     prefix: "ei"
     body: """
     else if (${1:condition}) {
-      ${0}
+    \t${0}
     }
     """
   "for loop":
     prefix: "fl"
     body: """
     for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
-      ${0}
+    \t${0}
     });
     """
   "for in loop":
     prefix: "fi"
     body: """
     for (var ${1:key} in ${2:source}) {
-      if (${2:source}.hasOwnProperty(${1:key})) {
-        ${0}
-      }
+    \tif (${2:source}.hasOwnProperty(${1:key})) {
+    \t\t${0}
+    \t}
     }
     """
   "while loop":
     prefix: "wl"
     body: """
     while (${1:condition}) {
-      ${0}
+    \t${0}
     }
     """

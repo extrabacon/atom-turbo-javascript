@@ -3,7 +3,7 @@
     prefix: "fe"
     body: """
     ${1:iterable}.forEach(function (${2:item}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain forEach":
@@ -13,7 +13,7 @@
     prefix: "map"
     body: """
     ${1:iterable}.map(function (${2:item}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain map":
@@ -23,7 +23,7 @@
     prefix: "reduce"
     body: """
     ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
-      ${0}
+    \t${0}
     }${4:, initial});
     """
   "Chain reduce":
@@ -33,7 +33,7 @@
     prefix: "filter"
     body: """
     ${1:iterable}.filter(function (${2:item}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain filter":

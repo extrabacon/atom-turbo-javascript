@@ -1,22 +1,22 @@
 ".source.js":
   "Node callback":
     prefix: "cb"
-    body: "function (err${1:, value}) {${0}}"
+    body: "function (err, ${1:value}) {${0}}"
   "Promise.then":
     prefix: "then"
     body: """
     ${1:promise}.then(function (${2:value}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain thenable":
     prefix: ".then"
-    body: ".then(function (${1:value}) {${0}}})"
+    body: ".then(function (${1:value}) {${0}})"
   "Promise.catch":
     prefix: "catch"
     body: """
     ${1:promise}.catch(function (${2:err}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain thenable catch":

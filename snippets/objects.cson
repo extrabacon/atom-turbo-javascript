@@ -6,13 +6,13 @@
     prefix: "proto"
     body: """
     ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
-      ${0}
+    \t${0}
     }
     """
   "Chain prototype method":
     prefix: ".proto"
     body: """
     .prototype.${2:methodName} = function (${3:arguments}) {
-      ${0}
+    \t${0}
     }
     """

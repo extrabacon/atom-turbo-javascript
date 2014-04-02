@@ -3,7 +3,7 @@
     prefix: "on"
     body: """
     ${1:emitter}.on('${2:event}', function (${3:arguments}) {
-      ${0}
+    \t${0}
     });
     """
   "Chain event listener":

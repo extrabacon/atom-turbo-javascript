@@ -3,20 +3,20 @@
     prefix: "desc"
     body: """
     describe('${1:description}', function () {
-      ${0}
+    \t${0}
     });
     """
   "it asynchronous":
     prefix: "ita"
     body: """
     it('${1:description}', function (done) {
-      ${0}
+    \t${0}
     });
     """
   "it synchronous":
     prefix: "its"
     body: """
     it('${1:description}', function () {
-      ${0}
+    \t${0}
     });
     """

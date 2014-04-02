@@ -3,7 +3,7 @@
     prefix: "nt"
     body: """
     process.nextTick(function () {
-      ${0}
+    \t${0}
     });
     """
   "process.exit":

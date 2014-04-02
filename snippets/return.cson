@@ -1,7 +1,7 @@
 ".source.js":
   "return":
     prefix: "r"
-    body: "return"
+    body: "return ${0};"
   "return this":
     prefix: "rth"
     body: "return this;"
