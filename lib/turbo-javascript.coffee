@@ -1,7 +1,9 @@
 module.exports =
   activate: (state) ->
-    atom.workspaceView.command 'turbo-javascript:end-line', => @endLine(false)
-    atom.workspaceView.command 'turbo-javascript:end-new-line', => @endLine(true)
+    atom.commands.add 'atom-text-editor',
+      'turbo-javascript:end-line': => @endLine(false)
+    atom.commands.add 'atom-text-editor',
+      'turbo-javascript:end-new-line': => @endLine(true)
 
   endLine: (insertNewLine) ->
     editor = atom.workspace.activePaneItem
