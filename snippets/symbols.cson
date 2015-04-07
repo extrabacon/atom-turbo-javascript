@@ -1,0 +1,6 @@
+".source.js":
+  "Symbol":
+    prefix: "sym"
+    body: """
+    Symbol(${0})
+    """

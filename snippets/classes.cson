@@ -1,0 +1,19 @@
+".source.js":
+  "Class":
+    prefix: "cla"
+    body: """
+    class ${1:name} {
+    \tconstructor(${2:arguments}) {
+    \t\t${0}
+    \t}
+    }
+    """
+  "Class extends":
+    prefix: "cle"
+    body: """
+    class ${1:name} extends ${2:extends} {
+    \tconstructor(${2:arguments}) {
+    \t\t${0}
+    \t}
+    }
+    """

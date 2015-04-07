@@ -1,0 +1,15 @@
+".source.js":
+  "generator":
+    prefix: "gen"
+    body: """
+    function*(${1:arguments}) {
+    \t${0}
+    }
+    """
+  "named generator":
+    prefix: "genn"
+    body: """
+    function* ${1:name}(${2:arguments}) {
+    \t${0}
+    }
+    """
