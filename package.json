@@ -3,10 +3,12 @@
   "main": "./lib/turbo-javascript",
   "version": "0.0.8",
   "description": "A collection of commands and snippets for optimizing Javascript development productivity",
-  "activationEvents": [
-    "turbo-javascript:end-line",
-    "turbo-javascript:end-new-line"
-  ],
+  "activationCommands": {
+    "atom-text-editor": [
+        "turbo-javascript:end-line",
+        "turbo-javascript:end-new-line"
+      ]
+  },
   "repository": "https://github.com/extrabacon/atom-turbo-javascript",
   "license": "MIT",
   "engines": {
