@@ -1,11 +1,11 @@
 ".source.js":
-  "Event listener":
+  "on event":
     prefix: "on"
     body: """
     ${1:emitter}.on('${2:event}', function (${3:arguments}) {
     \t${0}
     })
     """
-  "Chain event listener":
+  "chain on event":
     prefix: ".on"
     body: ".on('${2:event}', function (${3:arguments}) {${0}})"

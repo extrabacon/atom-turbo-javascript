@@ -6,7 +6,7 @@
     \t${0}
     })
     """
-  "Chain forEach":
+  "chain forEach":
     prefix: ".fe"
     body: ".forEach(function (${1:item}) {${0}})"
   "map":
@@ -16,7 +16,7 @@
     \t${0}
     })
     """
-  "Chain map":
+  "chain map":
     prefix: ".map"
     body: ".map(function (${1:item}) {${0}})"
   "reduce":
@@ -26,7 +26,7 @@
     \t${0}
     }${4:, initial})
     """
-  "Chain reduce":
+  "chain reduce":
     prefix: ".reduce"
     body: ".reduce(function (${1:previous}, ${2:current}) {${0}}${4:, initial})"
   "filter":
@@ -36,7 +36,7 @@
     \t${0}
     })
     """
-  "Chain filter":
+  "chain filter":
     prefix: ".filter"
     body: ".filter(function (${1:item}) {${0}})"
   "find":
@@ -46,6 +46,6 @@
     \t${0}
     })
     """
-  "Chain find":
+  "chain find":
     prefix: ".find"
     body: ".find(function (${1:item}) {${0}})"

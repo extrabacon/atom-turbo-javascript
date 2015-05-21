@@ -1,13 +1,13 @@
 ".source.js":
   "Express middleware":
-    prefix: "fm"
+    prefix: "xm"
     body: """
     function (req, res${1:, next}) {
     \t${0}
     }
     """
   "Express error handler":
-    prefix: "ferr"
+    prefix: "xerr"
     body: """
     function (err, req, res, next) {
     \t${0}

@@ -1,5 +1,5 @@
 ".source.js":
-  "Class":
+  "class":
     prefix: "c"
     body: """
     class ${1:name} {
@@ -8,11 +8,12 @@
     \t}
     }
     """
-  "Class extends":
+  "class extends":
     prefix: "cex"
     body: """
     class ${1:name} extends ${2:base} {
     \tconstructor(${2:arguments}) {
+    \t\tsuper(${2:arguments})
     \t\t${0}
     \t}
     }
