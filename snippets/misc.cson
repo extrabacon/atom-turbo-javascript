@@ -2,3 +2,6 @@
   "use strict":
     prefix: "us"
     body: "'use strict'"
+  "yield":
+    prefix: "y"
+    body: "yield ${1:value}"
