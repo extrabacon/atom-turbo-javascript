@@ -39,3 +39,13 @@
   "Chain filter":
     prefix: ".filter"
     body: ".filter(function (${1:item}) {${0}})"
+  "find":
+    prefix: "find"
+    body: """
+    ${1:iterable}.find(function (${2:item}) {
+    \t${0}
+    });
+    """
+  "Chain find":
+    prefix: ".find"
+    body: ".find(function (${1:item}) {${0}})"
