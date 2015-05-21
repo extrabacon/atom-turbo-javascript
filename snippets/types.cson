@@ -1,26 +1,26 @@
 ".source.js":
   "String":
-    prefix: "st"
+    prefix: "s"
     body: "String"
   "Number":
-    prefix: "nu"
+    prefix: "n"
     body: "Number"
   "Object":
-    prefix: "ob"
+    prefix: "o"
     body: "Object"
-  "RegExp":
-    prefix: "ar"
+  "Array":
+    prefix: "a"
     body: "Array"
   "Date":
-    prefix: "da"
+    prefix: "d"
     body: "Date"
   "RegExp":
     prefix: "rx"
     body: "RegExp"
-  "typeof obj === 'type'":
+  "typeof":
     prefix: "tof"
     body: "typeof ${1:source} === '${2:undefined}'"
-  "obj instanceof Constructor":
+  "instanceof":
     prefix: "iof"
     body: "${1:source} instanceof ${2:Object}"
   "Symbol":
