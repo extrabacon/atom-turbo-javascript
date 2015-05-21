@@ -1,4 +1,11 @@
 ".source.js":
+  "statement block":
+    prefix: "b"
+    body: """
+    {
+    \t${0}
+    }
+    """
   "if statement":
     prefix: "if"
     body: """
@@ -34,7 +41,7 @@
     body: """
     for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
     \t${0}
-    });
+    }
     """
   "for in loop":
     prefix: "fi"
@@ -45,17 +52,17 @@
     \t}
     }
     """
-  "while loop":
-    prefix: "wl"
-    body: """
-    while (${1:condition}) {
-    \t${0}
-    }
-    """
   "for of loop":
     prefix: "fo"
     body: """
     for (var ${1:key} of ${2:source}) {
+    \t${0}
+    }
+    """
+  "while loop":
+    prefix: "wl"
+    body: """
+    while (${1:condition}) {
     \t${0}
     }
     """
