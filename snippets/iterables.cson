@@ -4,7 +4,7 @@
     body: """
     ${1:iterable}.forEach(function (${2:item}) {
     \t${0}
-    });
+    })
     """
   "Chain forEach":
     prefix: ".fe"
@@ -14,7 +14,7 @@
     body: """
     ${1:iterable}.map(function (${2:item}) {
     \t${0}
-    });
+    })
     """
   "Chain map":
     prefix: ".map"
@@ -24,7 +24,7 @@
     body: """
     ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
     \t${0}
-    }${4:, initial});
+    }${4:, initial})
     """
   "Chain reduce":
     prefix: ".reduce"
@@ -34,7 +34,7 @@
     body: """
     ${1:iterable}.filter(function (${2:item}) {
     \t${0}
-    });
+    })
     """
   "Chain filter":
     prefix: ".filter"
@@ -44,7 +44,7 @@
     body: """
     ${1:iterable}.find(function (${2:item}) {
     \t${0}
-    });
+    })
     """
   "Chain find":
     prefix: ".find"

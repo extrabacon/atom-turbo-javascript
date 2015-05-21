@@ -14,7 +14,7 @@
     body: """
     ${1:promise}.then(function (${2:value}) {
     \t${0}
-    });
+    })
     """
   "Chain thenable":
     prefix: ".then"
@@ -24,7 +24,7 @@
     body: """
     ${1:promise}.catch(function (${2:err}) {
     \t${0}
-    });
+    })
     """
   "Chain thenable catch":
     prefix: ".catch"

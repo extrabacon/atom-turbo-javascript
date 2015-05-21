@@ -4,8 +4,8 @@
     body: """
     process.nextTick(function () {
     \t${0}
-    });
+    })
     """
   "process.exit":
     prefix: "pe"
-    body: "process.exit(${1:code});"
+    body: "process.exit(${1:code})"
