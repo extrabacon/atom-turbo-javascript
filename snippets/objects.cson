@@ -16,3 +16,6 @@
     \t${0}
     }
     """
+  "Object assign":
+    prefix: "a"
+    body: "Object.assign(${1:dest}, ${2:source})"
