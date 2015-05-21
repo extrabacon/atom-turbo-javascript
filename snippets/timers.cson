@@ -13,3 +13,10 @@
     \t${0}
     }, ${1:delay});
     """
+  "setImmediate":
+    prefix: "sim"
+    body: """
+    setImmediate(function () {
+    \t${0}
+    }, ${1:delay});
+    """
