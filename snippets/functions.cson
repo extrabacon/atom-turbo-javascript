@@ -37,14 +37,14 @@
     (${1:arguments)} => ${0}
     """
   "generator":
-    prefix: "g"
+    prefix: "gf"
     body: """
     function* (${1:arguments}) {
     \t${0}
     }
     """
   "named generator":
-    prefix: "gn"
+    prefix: "gfn"
     body: """
     function* ${1:name}(${2:arguments}) {
     \t${0}

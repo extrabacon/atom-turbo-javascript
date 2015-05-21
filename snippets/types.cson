@@ -23,13 +23,6 @@
   "obj instanceof Constructor":
     prefix: "iof"
     body: "${1:source} instanceof ${2:Object}"
-  "Promise":
-    prefix: "p",
-    body: """
-    new Promise((resolve, reject) => {
-    \t${0}
-    })
-    """
   "Symbol":
     prefix: "sym",
     body: """

@@ -2,6 +2,13 @@
   "Node callback":
     prefix: "cb"
     body: "function (err, ${1:value}) {${0}}"
+  "Promise":
+    prefix: "p",
+    body: """
+    new Promise((resolve, reject) => {
+    \t${0}
+    })
+    """
   "Promise.then":
     prefix: "then"
     body: """
