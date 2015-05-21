@@ -1,0 +1,22 @@
+".source.js":
+  "module export":
+    prefix: "ex"
+    body: """
+    export ${0}
+    """
+  "module default export":
+    prefix: "exd"
+    body: """
+    export default ${0}
+    """
+  "import module":
+    prefix: "im"
+    body: """
+    import ${1:*} from "${2:module}";
+    """
+  "import module as":
+    prefix: "ima"
+    body: """
+    import ${1:*} as ${2:name} from "${3:module}";
+    """
+

@@ -32,7 +32,21 @@
     ${1:fn}.bind(${2:this}, ${3:arguments})
     """
   "arrow (shorthand) function":
-    prefix: "fs"
+    prefix: "af"
     body: """
-    (${1:arguments}) => ${0}
+    (${1:arguments)} => ${0}
+    """
+  "generator":
+    prefix: "g"
+    body: """
+    function* (${1:arguments}) {
+    \t${0}
+    }
+    """
+  "named generator":
+    prefix: "gn"
+    body: """
+    function* ${1:name}(${2:arguments}) {
+    \t${0}
+    }
     """
