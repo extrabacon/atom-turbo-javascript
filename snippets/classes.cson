@@ -12,8 +12,8 @@
     prefix: "cex"
     body: """
     class ${1:name} extends ${2:base} {
-    \tconstructor(${2:arguments}) {
-    \t\tsuper(${2:arguments})
+    \tconstructor(${3:arguments}) {
+    \t\tsuper(${3:arguments})
     \t\t${0}
     \t}
     }
