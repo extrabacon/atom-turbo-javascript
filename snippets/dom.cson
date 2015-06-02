@@ -4,7 +4,7 @@
     body: """
     ${1:document}.addEventListener('${2:event}', function (e) {
     \t${0}
-    });
+    })
     """
   "getElementById":
     "prefix": "gi"
@@ -19,5 +19,5 @@
     "prefix": "qs"
     "body": "${1:document}.querySelector('${2:selector}')"
   "querySelectorAll":
-    "prefix": "qs"
+    "prefix": "qsa"
     "body": "Array.from(${1:document}.querySelectorAll('${2:selector}'))"

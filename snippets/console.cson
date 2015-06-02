@@ -5,6 +5,6 @@
   "console.error":
     prefix: "ce"
     body: "console.error(${0})"
-  "console.dir":
-    prefix: "cd"
-    body: "console.dir(${0})"
+  "console.warn":
+    prefix: "cw"
+    body: "console.warn(${0})"
