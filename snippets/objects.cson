@@ -1,5 +1,5 @@
 ".source.js":
-  "key/value":
+  "key/value pair":
     prefix: ":"
     body: "${1:key}: ${2:'value'}"
   "method":
