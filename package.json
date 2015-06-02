@@ -11,6 +11,13 @@
   },
   "repository": "https://github.com/extrabacon/atom-turbo-javascript",
   "license": "MIT",
+  "private": true,
+  "keywords": [
+    "javascript",
+    "snippets",
+    "es6",
+    "productivity"
+  ],
   "engines": {
     "atom": ">0.200.0"
   },
