@@ -6,9 +6,9 @@ module.exports =
       'turbo-javascript:end-new-line': => @endLine(true)
 
   endLine: (insertNewLine) ->
-    editor = atom.workspace.activePaneItem
+    editor = atom.workspace.getActivePaneItem()
     editor.getCursors().forEach((cursor) ->
-      editor.moveCursorToEndOfLine()
+      editor.moveToEndOfLine()
       if !/;\s*$/.test(cursor.getCurrentBufferLine())
         editor.insertText(';')
         if insertNewLine
