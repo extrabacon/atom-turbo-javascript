@@ -1,0 +1,19 @@
+".source.js":
+  "var statement":
+    prefix: "v"
+    body: "var ${1:name}"
+  "var assignment":
+    prefix: "v="
+    body: "var ${1:name} = ${2:value}"
+  "let statement":
+    prefix: "l"
+    body: "let ${1:name}"
+  "let assignment":
+    prefix: "l="
+    body: "let ${1:name} = ${2:value}"
+  "const statement":
+    prefix: "co"
+    body: "const ${1:name}"
+  "const assignment":
+    prefix: "co="
+    body: "const ${1:name} = ${2:value}"

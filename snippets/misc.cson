@@ -1,0 +1,10 @@
+".source.js":
+  "use strict":
+    prefix: "us"
+    body: "'use strict'"
+  "debugger":
+    prefix: "debug"
+    body: "debugger"
+  "yield":
+    prefix: "y"
+    body: "yield ${1:value}"

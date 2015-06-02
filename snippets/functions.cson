@@ -31,3 +31,29 @@
     body: """
     ${1:fn}.bind(${2:this}, ${3:arguments})
     """
+  "arrow function":
+    prefix: "af"
+    body: """
+    ${1:(arguments)} => ${2:statement}
+    """
+  "arrow function with body":
+    prefix: "afb"
+    body: """
+    ${1:(arguments)} => {
+    \t${0}
+    }
+    """
+  "generator":
+    prefix: "gf"
+    body: """
+    function* (${1:arguments}) {
+    \t${0}
+    }
+    """
+  "named generator":
+    prefix: "gfn"
+    body: """
+    function* ${1:name}(${2:arguments}) {
+    \t${0}
+    }
+    """

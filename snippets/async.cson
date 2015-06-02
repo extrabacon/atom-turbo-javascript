@@ -2,14 +2,21 @@
   "Node callback":
     prefix: "cb"
     body: "function (err, ${1:value}) {${0}}"
+  "Promise":
+    prefix: "p",
+    body: """
+    new Promise((resolve, reject) => {
+    \t${0}
+    })
+    """
   "Promise.then":
     prefix: "then"
     body: """
     ${1:promise}.then(function (${2:value}) {
     \t${0}
-    });
+    })
     """
-  "Chain thenable":
+  "chain then":
     prefix: ".then"
     body: ".then(function (${1:value}) {${0}})"
   "Promise.catch":
@@ -17,8 +24,8 @@
     body: """
     ${1:promise}.catch(function (${2:err}) {
     \t${0}
-    });
+    })
     """
-  "Chain thenable catch":
+  "chain catch":
     prefix: ".catch"
     body: ".catch(function (${1:err}) {${0}})"
