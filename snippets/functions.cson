@@ -34,7 +34,7 @@
   "arrow function":
     prefix: "af"
     body: """
-    ${1:(arguments)} => ${0}
+    ${1:(arguments)} => ${2:statement}
     """
   "arrow function with body":
     prefix: "afb"
