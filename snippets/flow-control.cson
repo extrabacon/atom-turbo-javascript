@@ -66,3 +66,32 @@
     \t${0}
     }
     """
+  "try/catch":
+    prefix: "tc"
+    body: """
+    try {
+    \t${0}
+    } catch (${1:err}) {
+    \t
+    }
+    """
+  "try/finally":
+    prefix: "tf"
+    body: """
+    try {
+    \t${0}
+    } finally {
+    \t
+    }
+    """
+  "try/catch/finally":
+    prefix: "tcf"
+    body: """
+    try {
+    \t${0}
+    } catch (${1:err}) {
+    \t
+    } finally {
+    \t
+    }
+    """
