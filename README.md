@@ -1,10 +1,10 @@
 # turbo-javascript
-A collection of commands and snippets for optimizing Javascript development productivity.
+A collection of commands and ES6-ready snippets for optimizing Javascript development productivity.
 
 ## Commands
 
 ### Easy semi-colons
-Use the following keymaps for quickly ending lines with semi-colons. It will insert the semi-colon only if there isn't one already.
+Snippets do not include semi-colons, but you can still add them quickly. Use the following keymaps for ending lines with semi-colons. It will insert the semi-colon only if there isn't one already.
 
 ##### End Line (CTRL + ;)
 Terminates the current line with a semi-colon.
@@ -16,58 +16,87 @@ Terminates the current line with a semi-colon and a new line.
 
 Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".". For example, ".fe" renders a chain-friendly version of `.forEach(iterator)`, while "fe" renders a full code block.
 
-### Console
+For example, `.map` will render `.map(function (${1:item}) {${0}})` instead of the full code block.
 
-Quickly log things to the console
+### Declarations
 
-#### cl: console.log
+#### `v⇥` var statement
 ```js
-console.log(${0});
+var ${1:name}
 ```
 
-#### ce: console.error
+#### `v=⇥` var assignment
 ```js
-console.error(${0});
+var ${1:name} = ${2:value}
 ```
 
-#### cw: console.warn
+#### `l⇥` let statement
 ```js
-console.warn(${0});
+let ${1:name}
+```
+
+#### `l=⇥` let assignment
+```js
+let ${1:name} = ${2:value}
+```
+
+#### `co⇥` const statement
+```js
+const ${1:name}
+```
+
+#### `co=⇥` const assignment
+```js
+const ${1:name} = ${2:value}
 ```
 
 ### Flow Control
 
-Fast expansion for common flow control statements
+#### `b⇥` statement block
+```js
+{
+  ${0}
+}
+```
 
-#### if: if statement
+#### `if⇥` if statement
 ```js
 if (${1:condition}) {
   ${0}
 }
 ```
 
-#### el: else statement
+#### `el⇥` else statement
 ```js
 else {
   ${0}
 }
 ```
 
-#### ei: else if statement
+#### `ife⇥` else statement
+```js
+if (${1:condition}) {
+  ${0}
+} else {
+
+}
+```
+
+#### `ei⇥` else if statement
 ```js
 else if (${1:condition}) {
   ${0}
 }
 ```
 
-#### fl: for loop
+#### `fl⇥` for loop
 ```js
 for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
   ${0}
-});
+}
 ```
 
-#### fi: for in loop
+#### `fi⇥` for in loop
 ```js
 for (var ${1:key} in ${2:source}) {
   if (${2:source}.hasOwnProperty(${1:key})) {
@@ -76,254 +105,461 @@ for (var ${1:key} in ${2:source}) {
 }
 ```
 
-#### wl: while loop
+#### `fo⇥` for of loop (ES6)
+```js
+for (var ${1:key} of ${2:source}) {
+  ${0}
+}
+```
+
+#### `wl⇥` while loop
 ```js
 while (${1:condition}) {
   ${0}
 }
 ```
 
+#### `tc⇥` try/catch
+```js
+try {
+ ${0}
+} catch (${1:err}) {
+
+}
+```
+
+#### `tf⇥` try/finally
+```js
+try {
+ ${0}
+} finally {
+
+}
+```
+
+#### `tcf⇥` try/catch/finally
+```js
+try {
+  ${0}
+} catch (${1:err}) {
+
+} finally {
+
+}
+```
+
 ### Functions
 
-Declare and manipulate functions with ease
-
-#### f: single-line anonymous function
+#### `f⇥` anonymous function
 ```js
 function (${1:arguments}) {${0}}
 ```
 
-#### fn: named function
+#### `fn⇥` named function
 ```js
 function ${1:name}(${2:arguments}) {
   ${0}
 }
 ```
 
-#### iife: immediately-invoked function expression
+#### `iife⇥` immediately-invoked function expression (IIFE)
 ```js
 (function (${1:arguments}) {
   ${0}
 })(${2});
 ```
 
-#### fa: function apply
+#### `fa⇥` function apply
 ```js
 ${1:fn}.apply(${2:this}, ${3:arguments})
 ```
 
-#### fc: function call
+#### `fc⇥` function call
 ```js
 ${1:fn}.call(${2:this}, ${3:arguments})
 ```
 
-#### fb: function bind
+#### `fb⇥` function bind
 ```js
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
+#### `af⇥` arrow function (ES6)
+```js
+${1:(arguments)} => ${2:statement}
+```
+
+#### `afb⇥` arrow function with body (ES6)
+```js
+${1:(arguments)} => {
+\t${0}
+}
+```
+
+#### `gf⇥` generator function (ES6)
+```js
+function* (${1:arguments}) {
+  ${0}
+}
+```
+
+#### `gfn⇥` named generator function (ES6)
+```js
+function* ${1:name}(${1:arguments}) {
+  ${0}
+}
+```
+
 ### Iterables
 
-Quickly add functional-style call chains with Javascript Array.prototype methods. All iterable snippets have a chainable version. To use the chain-optimized version, type a "." before the snippet. For example, `.map` will render `.map(function (${1:item}) {${0}})` instead of the full version.
-
-#### fe: for each loop (chainable)
+#### `fe⇥` forEach loop (chainable)
 ```js
 ${1:iterable}.forEach(function (${2:item}) {
   ${0}
 });
 ```
 
-#### map: map function (chainable)
+#### `map⇥` map function (chainable)
 ```js
 ${1:iterable}.map(function (${2:item}) {
   ${0}
 });
 ```
 
-#### reduce: reduce function (chainable)
+#### `reduce⇥` reduce function (chainable)
 ```js
 ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
   ${0}
 }${4:, initial});
 ```
 
-#### filter: filter function (chainable)
+#### `filter⇥` filter function (chainable)
 ```js
 ${1:iterable}.filter(function (${2:item}) {
   ${0}
 });
 ```
 
-### Objects and types
+#### `find⇥` ES6 find function (chainable)
+```js
+${1:iterable}.find(function (${2:item}) {
+  ${0}
+});
+```
 
-Shortcuts for dealing with types, objects, classes and inheritance.
+### Objects and classes
 
-#### :`:key/value pair
+#### `c⇥` class (ES6)
+```js
+class ${1:name} {
+  constructor(${2:arguments}) {
+    ${0}
+  }
+}
+```
+
+#### `cex⇥` child class (ES6)
+```js
+class ${1:name} extends ${2:base} {
+  constructor(${2:arguments}) {
+    super(${2:arguments})
+    ${0}
+  }
+}
+```
+
+#### `:⇥` key/value pair
 ```js
 ${1:key}: ${2:'value'}
 ```
 
-#### proto: prototype method (chainable)
+#### `m⇥` method (ES6 syntax)
+```js
+${1:method}(${2:arguments}) {
+  ${0}
+}
+```
+
+#### `get⇥` getter (ES6 syntax)
+```js
+get ${1:property}() {
+  ${0}
+}
+```
+
+#### `set⇥` setter (ES6 syntax)
+```js
+set ${1:property}(${2:value}) {
+  ${0}
+}
+```
+
+#### `gs⇥` getter and setter (ES6 syntax)
+```js
+get ${1:property}() {
+  ${0}
+}
+set ${1:property}(${2:value}) {
+
+}
+```
+
+#### `proto⇥` prototype method (chainable)
 ```js
 ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
   ${0}
 }
 ```
 
-#### tof: typeof obj === 'TypeName'
+### Returning values
+
+#### `r⇥` return
+```js
+return ${0}
+```
+
+#### `rth⇥` return this
+```js
+return this
+```
+
+#### `rn⇥` return null
+```js
+return null
+```
+
+#### `rt⇥` return true
+```js
+return true
+```
+
+#### `rf⇥` return false
+```js
+return false
+```
+
+#### `r0⇥` return 0
+```js
+return 0
+```
+
+#### `r-1⇥` return -1
+```js
+return -1
+```
+
+#### `rp⇥` return Promise (ES6)
+```js
+return new Promise((resolve, reject) => {
+  ${0}
+})
+```
+
+### Types
+
+#### `s⇥` String
+#### `n⇥` Number
+#### `o⇥` Object
+#### `a⇥` Array
+#### `d⇥` Date
+#### `rx⇥` RegExp
+#### `sym⇥` Symbol (ES6)
+#### `pr⇥` Proxy (ES6)
+
+#### `tof⇥` typeof obj === 'TypeName'
 ```js
 typeof ${1:source} === '${2:undefined}'
 ```
 
-#### iof: obj instanceof Constructor
+#### `iof⇥` obj instanceof Constructor
 ```js
 ${1:source} instanceof ${2:Object}
 ```
 
-#### Built-in types shortcuts:
-  * st: String
-  * nu: Number
-  * ob: Object
-  * ar: Array
-  * da: Date
-  * rx: RegExp
-
-### Returning values
-
-Quickly return values from your functions with these commonly used return statements
-
-#### r: return
-```js
-return ${0};
-```
-
-#### rth: return this
-```js
-return this;
-```
-
-#### rn: return null
-```js
-return null;
-```
-
-#### rt: return true
-```js
-return true;
-```
-
-#### rf: return false
-```js
-return false;
-```
-
-#### r0: return 0
-```js
-return 0;
-```
-
 ### Promises
 
-Using Promises/A+? Quickly connect your promise flow with the following snippets.
+#### `p⇥` new Promise (ES6)
+```js
+new Promise((resolve, reject) => {
+  ${0}
+})
+```
 
-#### then: Promise.then (chainable)
+#### `then⇥` Promise.then (chainable)
 ```js
 ${1:promise}.then(function (${2:value}) {
   ${0}
-});
+})
 ```
 
-#### catch: Promise.catch (chainable)
+#### `catch⇥` Promise.catch (chainable)
 ```js
 ${1:promise}.catch(function (${2:err}) {
   ${0}
-});
+})
 ```
 
-### BDD testing
+### ES6 modules
 
-BDD-style testing shortcuts for Mocha, Jasmine and others
+#### `ex⇥` module export
+```js
+export ${1:member}
+```
 
-#### desc: describe
+#### `im⇥` module import
+```js
+import ${1:*} from '${2:module}'
+```
+
+#### `ima⇥` module import as
+```js
+import ${1:*} as ${2:name} from '${3:module}'
+```
+
+### BDD testing (Mocha, Jasmine, etc.)
+
+#### `desc⇥` describe
 ```js
 describe('${1:description}', function () {
   ${0}
-});
+})
 ```
-#### its: synchronous "it"
+#### `its⇥` synchronous "it"
 ```js
 it('${1:description}', function () {
   ${0}
-});
+})
 ```
-#### ita: asynchronous "it"
+#### `ita⇥` asynchronous "it"
 ```js
 it('${1:description}', function (done) {
   ${0}
 });
 ```
 
+### Console
+
+#### `cl⇥` console.log
+```js
+console.log(${0})
+```
+
+#### `ce⇥` console.error
+```js
+console.error(${0})
+```
+
+#### `cw⇥` console.warn
+```js
+console.warn(${0})
+```
+
 ### Timers
 
-Timer shortcuts
-
-#### st: setTimeout
+#### `st⇥` setTimeout
 ```js
 setTimeout(function () {
   ${0}
 }, ${1:delay});
 ```
 
-#### si: setInterval
+#### `si⇥` setInterval
 ```js
 setTimeout(function () {
   ${0}
 }, ${1:delay});
+```
+
+### DOM specifics
+
+#### `ae⇥` addEventListener
+```js
+${1:document}.addEventListener('${2:event}', function (e) {
+  ${0}
+})
+```
+
+#### `gi⇥` getElementById
+```js
+${1:document}.getElementById('${2:id}')
+```
+
+#### `gc⇥` getElementsByClassName (`Array.from` polyfill required for ES5)
+```js
+Array.from(${1:document}.getElementsByClassName('${2:class}'))
+```
+
+#### `gt⇥` getElementsByTagName (`Array.from` polyfill required for ES5)
+```js
+Array.from(${1:document}.getElementsByTagName('${2:tag}'))
+```
+
+#### `qs⇥` querySelector
+```js
+${1:document}.querySelector('${2:selector}')
+```
+
+#### `qsa⇥` querySelectorAll (`Array.from` polyfill required for ES5)
+```js
+Array.from(${1:document}.querySelectorAll('${2:selector}'))
 ```
 
 ### Node.js specifics
 
-The following snippets apply only within Node.js or scripts with Browserify
-
-#### cb: Node.js style callback
+#### `cb⇥` Node.js style callback
 ```js
 function (err${1:, value}) {${0}}
 ```
 
-#### re: require a module
+#### `re⇥` require a module
 ```js
-require('${1:module}');
+require('${1:module}')
 ```
 
-#### ex: export member
+#### `em⇥` export member
 ```js
-exports.${1:name} = ${2:value};
+exports.${1:name} = ${2:value}
 ```
 
-#### me: module.exports
+#### `me⇥` module.exports
 ```js
-module.exports = ${1:name};
+module.exports = ${1:name}
 ```
 
-#### on: attach an event handler (chainable)
+#### `on⇥` attach an event handler (chainable)
 ```js
 ${1:emitter}.on('${2:event}', function (${3:arguments}) {
   ${0}
-});
+})
 ```
 
-#### nt: Process.nextTick
+#### `xm⇥` Express middleware
 ```js
-process.nextTick(function () {
+function (req, res${1:, next}) {
   ${0}
-});
+}
 ```
 
-#### pe: Process.exit
+#### `xerr⇥` Express error handler
 ```js
-process.exit(${1:code});
+function (err, req, res, next) {
+  ${0}
+}
 ```
 
-#### Asserts
-  * ase: assert.equal
-  * asn: assert.notEqual
-  * asd: assert.deepEqual
+### Miscellaneous
+
+#### `us⇥` use strict
+```js
+'use strict'
+```
+
+#### `debug⇥` debugger statement
+```js
+debugger
+```
+
+#### `y⇥` yield (ES6)
+```js
+yield ${1:value}
+```
