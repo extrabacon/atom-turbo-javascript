@@ -1,11 +1,4 @@
 ".source.js":
-  "statement block":
-    prefix: "b"
-    body: """
-    {
-    \t${0}
-    }
-    """
   "if statement":
     prefix: "if"
     body: """

@@ -1,21 +1,21 @@
 ".source.js":
   "String":
-    prefix: "s"
+    prefix: "S"
     body: "String"
   "Number":
-    prefix: "n"
+    prefix: "N"
     body: "Number"
   "Object":
-    prefix: "o"
+    prefix: "O"
     body: "Object"
   "Array":
-    prefix: "a"
+    prefix: "A"
     body: "Array"
   "Date":
-    prefix: "d"
+    prefix: "D"
     body: "Date"
   "RegExp":
-    prefix: "rx"
+    prefix: "Rx"
     body: "RegExp"
   "typeof":
     prefix: "tof"
@@ -23,13 +23,3 @@
   "instanceof":
     prefix: "iof"
     body: "${1:source} instanceof ${2:Object}"
-  "Symbol":
-    prefix: "sym",
-    body: """
-    Symbol(${0})
-    """
-  "Proxy":
-    prefix: "pr",
-    body: """
-    Proxy(${1:target}, ${2:handler})
-    """
