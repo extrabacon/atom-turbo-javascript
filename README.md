@@ -3,20 +3,25 @@ A collection of commands and ES6-ready snippets for optimizing Javascript develo
 
 ## Commands
 
-### Easy semi-colons
-Snippets do not include semi-colons, but you can still add them quickly. Use the following keymaps for ending lines with semi-colons. It will insert the semi-colon only if there isn't one already.
+Use the following keymaps to easily insert semicolons or manipulate blocks of code. Snippets do not include semicolons, but you can still add them quickly with the `ctrl-;` shortcut.
 
-##### End Line (CTRL + ;)
-Terminates the current line with a semi-colon.
+#### End Line `CTRL-;`
+Terminates the current line with a semicolon.
 
-##### End New Line (CTRL + ENTER)
-Terminates the current line with a semi-colon and a new line.
+#### End Line with a comma `CTRL-,`
+Terminates the current line with a colon.
+
+#### End New Line `CTRL-ENTER`
+Terminates the current line with a colon or semicolon, followed with a new line. A colon is inserted when inside an object literal.
+
+#### Easy Blocks `CTRL-B`
+Creates a statement block `{ ... }` with the selected text placed inside and properly indented. If the selection is already wrapped with a block, the block is removed and its content is unindented.
 
 ## Snippets
 
-Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".". For example, ".fe" renders a chain-friendly version of `.forEach(iterator)`, while "fe" renders a full code block.
+Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".
 
-For example, `.map` will render `.map(function (${1:item}) {${0}})` instead of the full code block.
+For example, `.fe` renders a chain-friendly version of the forEach snippet, while `fe` renders a full code block.
 
 ### Declarations
 
@@ -51,13 +56,6 @@ const ${1:name} = ${2:value}
 ```
 
 ### Flow Control
-
-#### `b⇥` statement block
-```js
-{
-  ${0}
-}
-```
 
 #### `if⇥` if statement
 ```js
@@ -357,21 +355,19 @@ return new Promise((resolve, reject) => {
 
 ### Types
 
-#### `s⇥` String
-#### `n⇥` Number
-#### `o⇥` Object
-#### `a⇥` Array
-#### `d⇥` Date
-#### `rx⇥` RegExp
-#### `sym⇥` Symbol (ES6)
-#### `pr⇥` Proxy (ES6)
+#### `S⇥` String
+#### `N⇥` Number
+#### `O⇥` Object
+#### `A⇥` Array
+#### `D⇥` Date
+#### `Rx⇥` RegExp
 
-#### `tof⇥` typeof obj === 'TypeName'
+#### `tof⇥` typeof comparison
 ```js
 typeof ${1:source} === '${2:undefined}'
 ```
 
-#### `iof⇥` obj instanceof Constructor
+#### `iof⇥` instanceof comparison
 ```js
 ${1:source} instanceof ${2:Object}
 ```
@@ -484,25 +480,28 @@ ${1:document}.addEventListener('${2:event}', function (e) {
 ${1:document}.getElementById('${2:id}')
 ```
 
-#### `gc⇥` getElementsByClassName (`Array.from` polyfill required for ES5)
+#### `gc⇥` getElementsByClassName
 ```js
 Array.from(${1:document}.getElementsByClassName('${2:class}'))
 ```
+`Array.from` polyfill required for ES5
 
-#### `gt⇥` getElementsByTagName (`Array.from` polyfill required for ES5)
+#### `gt⇥` getElementsByTagName
 ```js
 Array.from(${1:document}.getElementsByTagName('${2:tag}'))
 ```
+`Array.from` polyfill required for ES5
 
 #### `qs⇥` querySelector
 ```js
 ${1:document}.querySelector('${2:selector}')
 ```
 
-#### `qsa⇥` querySelectorAll (`Array.from` polyfill required for ES5)
+#### `qsa⇥` querySelectorAll
 ```js
 Array.from(${1:document}.querySelectorAll('${2:selector}'))
 ```
+`Array.from` polyfill required for ES5
 
 ### Node.js specifics
 
@@ -554,12 +553,14 @@ function (err, req, res, next) {
 'use strict'
 ```
 
-#### `debug⇥` debugger statement
-```js
-debugger
-```
+# License
 
-#### `y⇥` yield (ES6)
-```js
-yield ${1:value}
-```
+The MIT License (MIT)
+
+Copyright (c) 2014, Nicolas Mercier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
