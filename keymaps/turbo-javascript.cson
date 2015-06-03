@@ -7,6 +7,7 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'atom-workspace':
+'atom-text-editor':
   'ctrl-;': 'turbo-javascript:end-line'
+  'ctrl-,': 'turbo-javascript:end-line-comma'
   'ctrl-enter': 'turbo-javascript:end-new-line'
