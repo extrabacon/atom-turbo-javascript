@@ -6,7 +6,9 @@
   "activationCommands": {
     "atom-text-editor": [
       "turbo-javascript:end-line",
-      "turbo-javascript:end-new-line"
+      "turbo-javascript:end-line-comma",
+      "turbo-javascript:end-new-line",
+      "turbo-javascript:wrap-block"
     ]
   },
   "repository": "https://github.com/extrabacon/atom-turbo-javascript",
