@@ -36,9 +36,9 @@ module.exports =
         return if a.start.row > b.start.row then -1 else 1
       ).forEach((range) ->
         text = editor.getTextInBufferRange(range)
-        if (/^\{\s*/.test(text) && /\s*\}/.test(text))
+        if (/^\s*\{\s*/.test(text) && /\s*\}\s*/.test(text))
           # unwrap each selection from its block
-          editor.setTextInBufferRange(range, text.replace(/^\{\s*/, '').replace(/\s*\}/, ''))
+          editor.setTextInBufferRange(range, text.replace(/\{\s*/, '').replace(/\s*\}/, ''))
         else
           # wrap each selection in a block
           editor.setTextInBufferRange(range, '{\n' + text + '\n}')
