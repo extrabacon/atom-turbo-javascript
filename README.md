@@ -3,16 +3,16 @@ A collection of commands and ES6-ready snippets for optimizing Javascript develo
 
 ## Commands
 
-Use the following keymaps to easily insert semicolons or manipulate blocks of code. Semicolons are inserted only
+Use the following keymaps to speed up your development. You can quickly terminate lines with semicolons or manipulate blocks of code with ease.
 
 #### End Line `CTRL-;`
 Terminates the current line with a semicolon.
 
 #### End Line with a comma `CTRL-,`
-Terminates the current line with a colon.
+Terminates the current line with a comma (great for object literals).
 
 #### End New Line `CTRL-ENTER`
-Terminates the current line with a colon or semicolon, followed with a new line. A colon is inserted when inside an object literal.
+Terminates the current line with a colon or semicolon, followed with a new line. A comma is inserted when the cursor is inside an object literal, otherwise a semicolon is inserted.
 
 #### Easy Blocks `CTRL-B`
 Creates a statement block `{ ... }` with the selected text placed inside and properly indented. If the selection is already wrapped with a block, the block is removed and its content is unindented.
