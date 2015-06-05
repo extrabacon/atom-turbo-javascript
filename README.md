@@ -3,7 +3,7 @@ A collection of commands and ES6-ready snippets for optimizing Javascript develo
 
 ## Commands
 
-Use the following keymaps to easily insert semicolons or manipulate blocks of code. Snippets do not include semicolons, but you can still add them quickly with the `ctrl-;` shortcut.
+Use the following keymaps to easily insert semicolons or manipulate blocks of code. Semicolons are inserted only
 
 #### End Line `CTRL-;`
 Terminates the current line with a semicolon.
@@ -306,51 +306,51 @@ set ${1:property}(${2:value}) {
 ```js
 ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
   ${0}
-}
+};
 ```
 
 ### Returning values
 
 #### `r⇥` return
 ```js
-return ${0}
+return ${0};
 ```
 
 #### `rth⇥` return this
 ```js
-return this
+return this;
 ```
 
 #### `rn⇥` return null
 ```js
-return null
+return null;
 ```
 
 #### `rt⇥` return true
 ```js
-return true
+return true;
 ```
 
 #### `rf⇥` return false
 ```js
-return false
+return false;
 ```
 
 #### `r0⇥` return 0
 ```js
-return 0
+return 0;
 ```
 
 #### `r-1⇥` return -1
 ```js
-return -1
+return -1;
 ```
 
 #### `rp⇥` return Promise (ES6)
 ```js
 return new Promise((resolve, reject) => {
   ${0}
-})
+});
 ```
 
 ### Types
@@ -385,31 +385,31 @@ new Promise((resolve, reject) => {
 ```js
 ${1:promise}.then(function (${2:value}) {
   ${0}
-})
+});
 ```
 
 #### `catch⇥` Promise.catch (chainable)
 ```js
 ${1:promise}.catch(function (${2:err}) {
   ${0}
-})
+});
 ```
 
 ### ES6 modules
 
 #### `ex⇥` module export
 ```js
-export ${1:member}
+export ${1:member};
 ```
 
 #### `im⇥` module import
 ```js
-import ${1:*} from '${2:module}'
+import ${1:*} from '${2:module}';
 ```
 
 #### `ima⇥` module import as
 ```js
-import ${1:*} as ${2:name} from '${3:module}'
+import ${1:*} as ${2:name} from '${3:module}';
 ```
 
 ### BDD testing (Mocha, Jasmine, etc.)
@@ -418,13 +418,13 @@ import ${1:*} as ${2:name} from '${3:module}'
 ```js
 describe('${1:description}', function () {
   ${0}
-})
+});
 ```
 #### `its⇥` synchronous "it"
 ```js
 it('${1:description}', function () {
   ${0}
-})
+});
 ```
 #### `ita⇥` asynchronous "it"
 ```js
@@ -437,17 +437,17 @@ it('${1:description}', function (done) {
 
 #### `cl⇥` console.log
 ```js
-console.log(${0})
+console.log(${0});
 ```
 
 #### `ce⇥` console.error
 ```js
-console.error(${0})
+console.error(${0});
 ```
 
 #### `cw⇥` console.warn
 ```js
-console.warn(${0})
+console.warn(${0});
 ```
 
 ### Timers
@@ -466,13 +466,21 @@ setTimeout(function () {
 }, ${1:delay});
 ```
 
+#### `sim⇥` setInterval
+```js
+setImmediate(function () {
+  ${0}
+});
+```
+
+
 ### DOM specifics
 
 #### `ae⇥` addEventListener
 ```js
 ${1:document}.addEventListener('${2:event}', function (e) {
   ${0}
-})
+});
 ```
 
 #### `gi⇥` getElementById
@@ -512,24 +520,24 @@ function (err${1:, value}) {${0}}
 
 #### `re⇥` require a module
 ```js
-require('${1:module}')
+require('${1:module}');
 ```
 
 #### `em⇥` export member
 ```js
-exports.${1:name} = ${2:value}
+exports.${1:name} = ${2:value};
 ```
 
 #### `me⇥` module.exports
 ```js
-module.exports = ${1:name}
+module.exports = ${1:name};
 ```
 
 #### `on⇥` attach an event handler (chainable)
 ```js
 ${1:emitter}.on('${2:event}', function (${3:arguments}) {
   ${0}
-})
+});
 ```
 
 #### `xm⇥` Express middleware
@@ -550,7 +558,7 @@ function (err, req, res, next) {
 
 #### `us⇥` use strict
 ```js
-'use strict'
+'use strict';
 ```
 
 # License
