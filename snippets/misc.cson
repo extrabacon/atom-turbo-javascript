@@ -1,4 +1,4 @@
 ".source.js":
   "use strict":
     prefix: "us"
-    body: "'use strict'"
+    body: "'use strict';"

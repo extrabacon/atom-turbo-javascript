@@ -38,7 +38,7 @@
     body: """
     ${1:Class}.prototype.${2:method} = function (${3:arguments}) {
     \t${0}
-    }
+    };
     """
   "chain prototype method":
     prefix: ".proto"

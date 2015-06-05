@@ -1,29 +1,29 @@
 ".source.js":
   "return":
     prefix: "r"
-    body: "return ${0}"
+    body: "return ${0};"
   "return this":
     prefix: "rth"
-    body: "return this"
+    body: "return this;"
   "return null":
     prefix: "rn"
-    body: "return null"
+    body: "return null;"
   "return true":
     prefix: "rt"
-    body: "return true"
+    body: "return true;"
   "return false":
     prefix: "rf"
-    body: "return false"
+    body: "return false;"
   "return 0":
     prefix: "r0"
-    body: "return 0"
+    body: "return 0;"
   "return -1":
     prefix: "r-1"
-    body: "return -1"
+    body: "return -1;"
   "return promise":
     prefix: "rp"
     body: """
     return new Promise((resolve, reject) => {
     \t${0}
-    })
+    });
     """

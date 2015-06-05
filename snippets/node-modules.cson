@@ -1,10 +1,10 @@
 ".source.js":
   "require":
     prefix: "re"
-    body: "require('${1:module}')"
+    body: "require('${1:module}');"
   "exports.member":
     prefix: "em"
-    body: "exports.${1:member} = ${2:value}"
+    body: "exports.${1:member} = ${2:value};"
   "module.exports":
     prefix: "me"
-    body: "module.exports = ${1:name}"
+    body: "module.exports = ${1:name};"

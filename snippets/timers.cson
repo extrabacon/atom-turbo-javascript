@@ -4,19 +4,19 @@
     body: """
     setTimeout(function () {
     \t${0}
-    }, ${1:delay})
+    }, ${1:delay});
     """
   "setInterval":
     prefix: "si"
     body: """
     setInterval(function () {
     \t${0}
-    }, ${1:delay})
+    }, ${1:delay});
     """
   "setImmediate":
     prefix: "sim"
     body: """
     setImmediate(function () {
     \t${0}
-    })
+    });
     """
