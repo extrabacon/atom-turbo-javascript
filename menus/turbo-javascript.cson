@@ -1,0 +1,14 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Turbo Javascript'
+      'submenu': [
+        {'label': 'End line and return', 'command': 'turbo-javascript:end-new-line'}
+        {'label': 'End line with semicolon', 'command': 'turbo-javascript:end-line'}
+        {'label': 'End line with comma', 'command': 'turbo-javascript:end-line-comma'}
+        {'label': 'Insert or remove block', 'command': 'turbo-javascript:wrap-block'}
+      ]
+    ]
+  }
+]
