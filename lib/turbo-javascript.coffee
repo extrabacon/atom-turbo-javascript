@@ -1,3 +1,7 @@
+emptyLine = /^\s*$/
+objectLiteralLine = /^\s*[\w'"]+\s*\:\s*/m
+continuationLine = /[\{\(;,]\s*$/
+
 module.exports =
 
   activate: (state) ->
@@ -15,11 +19,12 @@ module.exports =
     editor.getCursors().forEach((cursor) ->
       line = cursor.getCurrentBufferLine()
       editor.moveToEndOfLine()
+
       if !terminator
         # guess the best terminator
-        terminator = if /^\s*[\w'"]+\s*\:\s*/m.test(line) then ',' else ';'
+        terminator = if objectLiteralLine.test(line) then ',' else ';'
 
-      editor.insertText(terminator) if !/[\{\(;,]\s*$/.test(line) && !/^\s+$/
+      editor.insertText(terminator) if !continuationLine.test(line) and !emptyLine.test(line)
       editor.insertNewlineBelow() if insertNewLine
     )
 
