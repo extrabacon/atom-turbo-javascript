@@ -267,8 +267,13 @@ class ${1:name} extends ${2:base} {
 ```
 
 #### `:⇥` key/value pair
+Javascript:
 ```js
 ${1:key}: ${2:'value'}
+```
+JSON:
+```json
+"${1:key}": ${2:"value"}
 ```
 
 #### `m⇥` method (ES6 syntax)
