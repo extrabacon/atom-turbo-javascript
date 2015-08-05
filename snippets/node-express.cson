@@ -13,3 +13,19 @@
     \t${0}
     }
     """
+
+".source.ts":
+  "Express middleware":
+    prefix: "xm"
+    body: """
+    function (req, res${1:, next}) {
+    \t${0}
+    }
+    """
+  "Express error handler":
+    prefix: "xerr"
+    body: """
+    function (err, req, res, next) {
+    \t${0}
+    }
+    """

@@ -49,3 +49,55 @@
   "chain find":
     prefix: ".find"
     body: ".find(function (${1:item}) {${0}})"
+
+".source.ts":
+  "forEach loop":
+    prefix: "fe"
+    body: """
+    ${1:iterable}.forEach(function (${2:item}) {
+    \t${0}
+    });
+    """
+  "chain forEach":
+    prefix: ".fe"
+    body: ".forEach(function (${1:item}) {${0}})"
+  "map":
+    prefix: "map"
+    body: """
+    ${1:iterable}.map(function (${2:item}) {
+    \t${0}
+    });
+    """
+  "chain map":
+    prefix: ".map"
+    body: ".map(function (${1:item}) {${0}})"
+  "reduce":
+    prefix: "reduce"
+    body: """
+    ${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
+    \t${0}
+    }${4:, initial});
+    """
+  "chain reduce":
+    prefix: ".reduce"
+    body: ".reduce(function (${1:previous}, ${2:current}) {${0}}${4:, initial})"
+  "filter":
+    prefix: "filter"
+    body: """
+    ${1:iterable}.filter(function (${2:item}) {
+    \t${0}
+    });
+    """
+  "chain filter":
+    prefix: ".filter"
+    body: ".filter(function (${1:item}) {${0}})"
+  "find":
+    prefix: "find"
+    body: """
+    ${1:iterable}.find(function (${2:item}) {
+    \t${0}
+    });
+    """
+  "chain find":
+    prefix: ".find"
+    body: ".find(function (${1:item}) {${0}})"

@@ -57,3 +57,63 @@
     \t${0}
     }
     """
+
+".source.ts":
+  "anonymous function":
+    prefix: "f"
+    body: "function (${1:arguments}) {${0}}"
+  "named function":
+    prefix: "fn"
+    body: """
+    function ${1:name}(${2:arguments}) {
+    \t${0}
+    }
+    """
+  "immediately-invoked function expression":
+    prefix: "iife"
+    body: """
+    (function (${1:arguments}) {
+    \t${0}
+    })(${2});
+    """
+  "function apply":
+    prefix: "fa"
+    body: """
+    ${1:fn}.apply(${2:this}, ${3:arguments})
+    """
+  "function call":
+    prefix: "fc"
+    body: """
+    ${1:fn}.call(${2:this}, ${3:arguments})
+    """
+  "function bind":
+    prefix: "fb"
+    body: """
+    ${1:fn}.bind(${2:this}, ${3:arguments})
+    """
+  "arrow function":
+    prefix: "af"
+    body: """
+    ${1:(arguments)} => ${2:statement}
+    """
+  "arrow function with body":
+    prefix: "afb"
+    body: """
+    ${1:(arguments)} => {
+    \t${0}
+    }
+    """
+  "generator":
+    prefix: "gf"
+    body: """
+    function* (${1:arguments}) {
+    \t${0}
+    }
+    """
+  "named generator":
+    prefix: "gfn"
+    body: """
+    function* ${1:name}(${2:arguments}) {
+    \t${0}
+    }
+    """

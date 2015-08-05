@@ -18,3 +18,24 @@
     \t}
     }
     """
+
+".source.ts":
+  "class":
+    prefix: "c"
+    body: """
+    class ${1:name} {
+    \tconstructor(${2:arguments}) {
+    \t\t${0}
+    \t}
+    }
+    """
+  "class extends":
+    prefix: "cex"
+    body: """
+    class ${1:name} extends ${2:base} {
+    \tconstructor(${3:arguments}) {
+    \t\tsuper(${3:arguments})
+    \t\t${0}
+    \t}
+    }
+    """

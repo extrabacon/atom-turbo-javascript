@@ -21,3 +21,27 @@
   "querySelectorAll":
     "prefix": "qsa"
     "body": "Array.from(${1:document}.querySelectorAll('${2:selector}'))"
+
+".source.ts":
+  "addEventListener":
+    prefix: "ae"
+    body: """
+    ${1:document}.addEventListener('${2:event}', function (e) {
+    \t${0}
+    });
+    """
+  "getElementById":
+    "prefix": "gi"
+    "body": "${1:document}.getElementById('${2:id}')"
+  "getElementsByClassName":
+    "prefix": "gc"
+    "body": "Array.from(${1:document}.getElementsByClassName('${2:class}'))"
+  "getElementsByTagName":
+    "prefix": "gt"
+    "body": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))"
+  "querySelector":
+    "prefix": "qs"
+    "body": "${1:document}.querySelector('${2:selector}')"
+  "querySelectorAll":
+    "prefix": "qsa"
+    "body": "Array.from(${1:document}.querySelectorAll('${2:selector}'))"
