@@ -23,3 +23,29 @@
   "instanceof":
     prefix: "iof"
     body: "${1:source} instanceof ${2:Object}"
+
+".source.ts":
+  "String":
+    prefix: "S"
+    body: "String"
+  "Number":
+    prefix: "N"
+    body: "Number"
+  "Object":
+    prefix: "O"
+    body: "Object"
+  "Array":
+    prefix: "A"
+    body: "Array"
+  "Date":
+    prefix: "D"
+    body: "Date"
+  "RegExp":
+    prefix: "Rx"
+    body: "RegExp"
+  "typeof":
+    prefix: "tof"
+    body: "typeof ${1:source} === '${2:undefined}'"
+  "instanceof":
+    prefix: "iof"
+    body: "${1:source} instanceof ${2:Object}"

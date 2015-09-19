@@ -8,3 +8,14 @@
   "import module as":
     prefix: "ima"
     body: "import ${1:*} as ${2:name} from '${3:module}';"
+
+".source.ts":
+  "module export":
+    prefix: "ex"
+    body: "export ${1:member};"
+  "import module":
+    prefix: "im"
+    body: "import ${1:*} from '${2:module}';"
+  "import module as":
+    prefix: "ima"
+    body: "import ${1:*} as ${2:name} from '${3:module}';"

@@ -2,3 +2,8 @@
   "use strict":
     prefix: "us"
     body: "'use strict';"
+
+".source.ts":
+  "use strict":
+    prefix: "us"
+    body: "'use strict';"

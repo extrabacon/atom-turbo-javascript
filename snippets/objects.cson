@@ -50,3 +50,56 @@
   "Object.assign":
     prefix: "a"
     body: "Object.assign(${1:dest}, ${2:source})"
+
+".source.ts":
+  "key/value pair":
+    prefix: ":"
+    body: "${1:key}: ${2:'value'}"
+  "method":
+    prefix: "m"
+    body: """
+    ${1:method}(${2:arguments}) {
+    \t${0}
+    }
+    """
+  "getter":
+    prefix: "get"
+    body: """
+    get ${1:property}() {
+    \t${0}
+    }
+    """
+  "setter":
+    prefix: "set"
+    body: """
+    set ${1:property}(${2:value}) {
+    \t${0}
+    }
+    """
+  "getter + setter":
+    prefix: "gs"
+    body: """
+    get ${1:property}() {
+    \t${0}
+    }
+    set ${1:property}(${2:value}) {
+    \t
+    }
+    """
+  "prototype method":
+    prefix: "proto"
+    body: """
+    ${1:Class}.prototype.${2:method} = function (${3:arguments}) {
+    \t${0}
+    };
+    """
+  "chain prototype method":
+    prefix: ".proto"
+    body: """
+    .prototype.${2:methodName} = function (${3:arguments}) {
+    \t${0}
+    }
+    """
+  "Object.assign":
+    prefix: "a"
+    body: "Object.assign(${1:dest}, ${2:source})"

@@ -8,3 +8,14 @@
   "console.warn":
     prefix: "cw"
     body: "console.warn(${0});"
+
+".source.ts":
+  "console.log":
+    prefix: "cl"
+    body: "console.log(${0});"
+  "console.error":
+    prefix: "ce"
+    body: "console.error(${0});"
+  "console.warn":
+    prefix: "cw"
+    body: "console.warn(${0});"
