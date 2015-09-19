@@ -184,12 +184,12 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 
 #### `af⇥` arrow function (ES6)
 ```js
-${1:(arguments)} => ${2:statement}
+(${1:arguments}) => ${2:statement}
 ```
 
 #### `afb⇥` arrow function with body (ES6)
 ```js
-${1:(arguments)} => {
+(${1:arguments}) => {
 \t${0}
 }
 ```
