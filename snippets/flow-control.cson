@@ -32,14 +32,14 @@
   "for loop":
     prefix: "fl"
     body: """
-    for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
+    for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
     \t${0}
     }
     """
   "for in loop":
     prefix: "fi"
     body: """
-    for (var ${1:key} in ${2:source}) {
+    for (let ${1:key} in ${2:source}) {
     \tif (${2:source}.hasOwnProperty(${1:key})) {
     \t\t${0}
     \t}
@@ -48,7 +48,7 @@
   "for of loop":
     prefix: "fo"
     body: """
-    for (var ${1:key} of ${2:source}) {
+    for (let ${1:key} of ${2:source}) {
     \t${0}
     }
     """
