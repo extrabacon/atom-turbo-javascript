@@ -2,7 +2,7 @@
   "addEventListener":
     prefix: "ae"
     body: """
-    ${1:document}.addEventListener('${2:event}', (e) => {
+    ${1:document}.addEventListener('${2:event}', ${3:ev} => {
     \t${0}
     });
     """
