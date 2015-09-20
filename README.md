@@ -21,7 +21,7 @@ Creates a statement block `{ ... }` with the selected text placed inside and pro
 
 Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".
 
-For example, `.fe` renders a chain-friendly version of the forEach snippet, while `fe` renders a full code block.
+For example, `.fe` renders a chain-friendly version of the "forEach" snippet, while `fe` renders a full code block.
 
 ### Declarations
 
@@ -89,14 +89,14 @@ else if (${1:condition}) {
 
 #### `fl⇥` for loop
 ```js
-for (var ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
+for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {
   ${0}
 }
 ```
 
 #### `fi⇥` for in loop
 ```js
-for (var ${1:key} in ${2:source}) {
+for (let ${1:key} in ${2:source}) {
   if (${2:source}.hasOwnProperty(${1:key})) {
     ${0}
   }
@@ -105,7 +105,7 @@ for (var ${1:key} in ${2:source}) {
 
 #### `fo⇥` for of loop (ES6)
 ```js
-for (var ${1:key} of ${2:source}) {
+for (let ${1:key} of ${2:source}) {
   ${0}
 }
 ```
@@ -212,35 +212,35 @@ function* ${1:name}(${1:arguments}) {
 
 #### `fe⇥` forEach loop (chainable)
 ```js
-${1:iterable}.forEach(function (${2:item}) {
+${1:iterable}.forEach((${2:item}) => {
   ${0}
 });
 ```
 
 #### `map⇥` map function (chainable)
 ```js
-${1:iterable}.map(function (${2:item}) {
+${1:iterable}.map((${2:item}) => {
   ${0}
 });
 ```
 
 #### `reduce⇥` reduce function (chainable)
 ```js
-${1:iterable}.reduce(function (${2:previous}, ${3:current}) {
+${1:iterable}.reduce((${2:previous}, ${3:current}) => {
   ${0}
 }${4:, initial});
 ```
 
 #### `filter⇥` filter function (chainable)
 ```js
-${1:iterable}.filter(function (${2:item}) {
+${1:iterable}.filter((${2:item}) => {
   ${0}
 });
 ```
 
 #### `find⇥` ES6 find function (chainable)
 ```js
-${1:iterable}.find(function (${2:item}) {
+${1:iterable}.find((${2:item}) => {
   ${0}
 });
 ```
@@ -260,7 +260,7 @@ class ${1:name} {
 ```js
 class ${1:name} extends ${2:base} {
   constructor(${2:arguments}) {
-    super(${2:arguments})
+    super(${2:arguments});
     ${0}
   }
 }
@@ -388,14 +388,14 @@ new Promise((resolve, reject) => {
 
 #### `then⇥` Promise.then (chainable)
 ```js
-${1:promise}.then(function (${2:value}) {
+${1:promise}.then(${2:value} => {
   ${0}
 });
 ```
 
 #### `catch⇥` Promise.catch (chainable)
 ```js
-${1:promise}.catch(function (${2:err}) {
+${1:promise}.catch(${2:err} => {
   ${0}
 });
 ```
@@ -405,6 +405,11 @@ ${1:promise}.catch(function (${2:err}) {
 #### `ex⇥` module export
 ```js
 export ${1:member};
+```
+
+#### `exd⇥` module default export
+```js
+export default ${1:member};
 ```
 
 #### `im⇥` module import
@@ -438,6 +443,34 @@ it('${1:description}', function (done) {
 });
 ```
 
+#### `bf⇥` before test suite
+```js
+before(function () {
+  ${0}
+});
+```
+
+#### `bfe⇥` before each test
+```js
+beforeEach(function () {
+  ${0}
+});
+```
+
+#### `aft⇥` after test suite
+```js
+after(function () {
+  ${0}
+});
+```
+
+#### `afe⇥` after each test
+```js
+afterEach(function () {
+  ${0}
+});
+```
+
 ### Console
 
 #### `cl⇥` console.log
@@ -459,31 +492,30 @@ console.warn(${0});
 
 #### `st⇥` setTimeout
 ```js
-setTimeout(function () {
+setTimeout(() => {
   ${0}
 }, ${1:delay});
 ```
 
 #### `si⇥` setInterval
 ```js
-setTimeout(function () {
+setTimeout(() => {
   ${0}
 }, ${1:delay});
 ```
 
 #### `sim⇥` setInterval
 ```js
-setImmediate(function () {
+setImmediate(() => {
   ${0}
 });
 ```
-
 
 ### DOM specifics
 
 #### `ae⇥` addEventListener
 ```js
-${1:document}.addEventListener('${2:event}', function (e) {
+${1:document}.addEventListener('${2:event}', ${3:ev} => {
   ${0}
 });
 ```
@@ -540,7 +572,7 @@ module.exports = ${1:name};
 
 #### `on⇥` attach an event handler (chainable)
 ```js
-${1:emitter}.on('${2:event}', function (${3:arguments}) {
+${1:emitter}.on('${2:event}', (${3:arguments}) => {
   ${0}
 });
 ```
