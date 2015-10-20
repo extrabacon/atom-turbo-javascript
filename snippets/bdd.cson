@@ -48,3 +48,52 @@
     \t${0}
     });
     """
+  "arrow describe":
+    prefix: "adesc"
+    body: """
+    describe("${1:description}", () => {
+    \t${0}
+    });
+    """
+  "arrow it asynchronous":
+    prefix: "aita"
+    body: """
+    it("${1:description}", (done) => {
+    \t${0}
+    });
+    """
+  "arrow it synchronous":
+    prefix: "aits"
+    body: """
+    it("${1:description}", () => {
+    \t${0}
+    });
+    """
+  "arrow mocha before":
+    prefix: "abf"
+    body: """
+    before(() => {
+    \t${0}
+    });
+    """
+  "arrow mocha beforeEach":
+    prefix: "abfe"
+    body: """
+    beforeEach(() => {
+    \t${0}
+    });
+    """
+  "arrow mocha after":
+    prefix: "aft"
+    body: """
+    after(() => {
+    \t${0}
+    });
+    """
+  "arrow mocha afterEach":
+    prefix: "afe"
+    body: """
+    afterEach(() => {
+    \t${0}
+    });
+    """
