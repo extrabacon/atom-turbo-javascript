@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts":
   "Node callback":
     prefix: "cb"
     body: "function (err, ${1:value}) {${0}}"
