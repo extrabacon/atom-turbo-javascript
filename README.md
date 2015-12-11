@@ -430,6 +430,12 @@ describe('${1:description}', function () {
   ${0}
 });
 ```
+#### `cont⇥` describe
+```js
+context('${1:description}', function () {
+  ${0}
+});
+```
 #### `its⇥` synchronous "it"
 ```js
 it('${1:description}', function () {
