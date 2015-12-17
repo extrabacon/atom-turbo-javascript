@@ -2,7 +2,7 @@
   "name": "turbo-javascript",
   "main": "./lib/turbo-javascript",
   "version": "1.2.0",
-  "description": "A collection of commands and snippets for optimizing Javascript development productivity",
+  "description": "A collection of commands and snippets for optimizing Javascript and Typescript development productivity",
   "activationCommands": {
     "atom-text-editor": [
       "turbo-javascript:end-line",
