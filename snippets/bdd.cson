@@ -2,63 +2,64 @@
   "describe":
     prefix: "desc"
     body: """
-    describe('${1:description}', () => {
+    describe('${1:description}', function () {
     \t${0}
     });
     """
   "context":
     prefix: "cont"
     body: """
-    context('${1:description}', () => {
+    context('${1:description}', function () {
     \t${0}
     });
     """
   "it":
     prefix: "it"
     body: """
-    it('${1:description}', () => {
-    \t${0}
-    });
-    """
-  "it asynchronous":
-    prefix: "ita"
-    body: """
-    it('${1:description}', (done) => {
+    it('${1:description}', function () {
     \t${0}
     });
     """
   "it synchronous":
     prefix: "its"
     body: """
-    it('${1:description}', () => {
+    it('${1:description}', function () {
     \t${0}
+    });
+    """
+  "it asynchronous":
+    prefix: "ita"
+    body: """
+    it('${1:description}', function (done) {
+    \t${0}
+    \tdone();
     });
     """
   "mocha before":
     prefix: "bf"
     body: """
-    before(() => {
+    before(function () {
     \t${0}
     });
     """
   "mocha beforeEach":
     prefix: "bfe"
     body: """
-    beforeEach(() => {
+    beforeEach(function () {
     \t${0}
     });
     """
   "mocha after":
     prefix: "aft"
     body: """
-    after(() => {
+    after(function () {
     \t${0}
     });
     """
   "mocha afterEach":
     prefix: "afe"
     body: """
-    afterEach(() => {
+    afterEach(function () {
     \t${0}
     });
     """
