@@ -1,4 +1,9 @@
 ".source.js, .source.ts":
+  "sequence":
+    prefix: "seq"
+    body: """
+    [...Array(${1:length}).keys()]${0}
+    """
   "forEach loop":
     prefix: "fe"
     body: """

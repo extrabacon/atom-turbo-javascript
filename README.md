@@ -210,6 +210,11 @@ function* ${1:name}(${1:arguments}) {
 
 ### Iterables
 
+#### `seq⇥` sequence of 0..n
+```js
+[...Array(${1:length}).keys()]${0}
+```
+
 #### `fe⇥` forEach loop (chainable)
 ```js
 ${1:iterable}.forEach((${2:item}) => {
