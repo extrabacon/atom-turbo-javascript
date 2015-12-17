@@ -20,6 +20,13 @@
   "return -1":
     prefix: "r-1"
     body: "return -1;"
+  "return complex value":
+    prefix: "rc"
+    body: """
+    return (
+    \t${0}
+    );
+    """
   "return promise":
     prefix: "rp"
     body: """

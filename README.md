@@ -380,6 +380,13 @@ return new Promise((resolve, reject) => {
 });
 ```
 
+#### `rc⇥` return complex value (such as JSX components)
+```js
+return (
+  ${0}
+);
+```
+
 ### Types
 
 #### `S⇥` String
