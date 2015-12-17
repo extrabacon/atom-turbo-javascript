@@ -1,7 +1,7 @@
 ".source.js, .source.ts":
   "require":
     prefix: "re"
-    body: "require('${1:module}');"
+    body: "require('${1:module}')"
   "exports.member":
     prefix: "em"
     body: "exports.${1:member} = ${2:value};"
