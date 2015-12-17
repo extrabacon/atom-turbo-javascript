@@ -88,3 +88,13 @@
     \t
     }
     """
+  "switch case":
+    prefix: "sw"
+    body: """
+    switch (${1:expr}) {
+    \tcase ${2:value}:
+    \t\treturn $0;
+    \tdefault:
+    \t\treturn;
+    }
+    """

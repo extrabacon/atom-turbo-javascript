@@ -146,6 +146,16 @@ try {
 }
 ```
 
+#### `sw⇥` switch case
+```js
+switch (${1:expr}) {
+  case ${2:value}:
+    return $0;
+  default:
+    return;
+}
+```
+
 ### Functions
 
 #### `f⇥` anonymous function
