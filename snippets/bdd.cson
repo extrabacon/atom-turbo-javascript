@@ -6,6 +6,13 @@
     \t${0}
     });
     """
+  "context":
+    prefix: "cont"
+    body: """
+    context('${1:description}', () => {
+    \t${0}
+    });
+    """
   "it":
     prefix: "it"
     body: """
