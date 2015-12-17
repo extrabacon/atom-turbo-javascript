@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts":
   "key/value pair":
     prefix: ":"
     body: "${1:key}: ${2:'value'}"

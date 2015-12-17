@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts":
   "if statement":
     prefix: "if"
     body: """

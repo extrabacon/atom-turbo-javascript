@@ -1,5 +1,5 @@
 # turbo-javascript
-A collection of commands and ES6-ready snippets for optimizing Javascript development productivity.
+A collection of commands and ES6-ready snippets for optimizing Javascript and Typescript development productivity.
 
 ## Commands
 
@@ -504,7 +504,7 @@ setTimeout(() => {
 }, ${1:delay});
 ```
 
-#### `sim⇥` setInterval
+#### `sim⇥` setImmediate
 ```js
 setImmediate(() => {
   ${0}
