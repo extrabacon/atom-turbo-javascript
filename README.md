@@ -266,6 +266,13 @@ class ${1:name} extends ${2:base} {
 }
 ```
 
+#### `ctor` class constructor (ES6)
+```js
+constructor(${1:arguments}) {
+  super(${1:arguments});${0}
+}
+```
+
 #### `:⇥` key/value pair
 Javascript:
 ```js

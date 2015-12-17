@@ -18,3 +18,10 @@
     \t}
     }
     """
+  "constructor":
+    prefix: "ctor"
+    body: """
+    constructor(${1:arguments}) {
+    \tsuper(${1:arguments});${0}
+    }
+    """
