@@ -321,6 +321,16 @@ ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
 };
 ```
 
+#### `a⇥` Object assign
+```js
+Object.assign(${1:dest}, ${2:source})
+```
+
+#### `ac⇥` Object assign copy (shallow clone)
+```js
+Object.assign({}, ${1:original}, ${2:source})
+```
+
 ### Returning values
 
 #### `r⇥` return
