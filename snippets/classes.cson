@@ -1,6 +1,6 @@
 ".source.js, .source.ts":
   "class":
-    prefix: "c"
+    prefix: "cl"
     body: """
     class ${1:name} {
     \tconstructor(${2:arguments}) {
