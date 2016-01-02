@@ -1,20 +1,22 @@
 ".source.js, .source.ts":
   "anonymous function":
     prefix: "f"
-    body: "function (${1:arguments}) {${0}}"
+    body: "function (${1}) {${0}}"
   "named function":
     prefix: "fn"
     body: """
-    function ${1:name}(${2:arguments}) {
+    function ${1}(${2}) {
     \t${0}
     }
     """
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
-    (function (${1:arguments}) {
-    \t${0}
-    })(${2});
+    (function (${1}) {
+    \t'use strict';
+
+    \t${2}
+    })(${3});
     """
   "function apply":
     prefix: "fa"
@@ -34,12 +36,12 @@
   "arrow function":
     prefix: "af"
     body: """
-    (${1:arguments}) => ${2:statement}
+    (${1}) => ${2}
     """
   "arrow function with body":
     prefix: "afb"
     body: """
-    (${1:arguments}) => {
+    (${1}) => {
     \t${0}
     }
     """
