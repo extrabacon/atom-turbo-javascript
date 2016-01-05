@@ -1,4 +1,4 @@
-".source.js, .source.ts":
+".source.js, .source.ts, .source.tsx":
   "let assignment":
     prefix: "l"
     body: "let ${1} = ${2};\n${3}"
