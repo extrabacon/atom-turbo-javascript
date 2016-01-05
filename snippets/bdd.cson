@@ -1,4 +1,4 @@
-".source.js, .source.ts":
+".source.js, .source.ts, .source.tsx":
   "describe":
     prefix: "desc"
     body: """

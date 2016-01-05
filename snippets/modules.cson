@@ -1,4 +1,4 @@
-".source.js, .source.ts":
+".source.js, .source.ts, .source.tsx":
   "module export":
     prefix: "ex"
     body: "export ${1:member};"
