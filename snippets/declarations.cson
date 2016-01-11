@@ -1,4 +1,4 @@
-".source.js, .source.ts":
+".source.js, .source.ts, .source.tsx":
   "var statement":
     prefix: "v"
     body: "var ${1:name}"
