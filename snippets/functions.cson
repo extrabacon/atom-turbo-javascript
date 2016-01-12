@@ -57,10 +57,3 @@
     \t${0}
     }
     """
-  "process nextTick":
-    prefix: "nt"
-    body: """
-    process.nextTick(function () {
-    \t${1:}
-    });
-    """
