@@ -13,8 +13,6 @@
     prefix: "iife"
     body: """
     (function (${1}) {
-    \t'use strict';
-
     \t${2}
     })(${3});
     """
