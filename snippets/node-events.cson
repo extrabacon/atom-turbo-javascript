@@ -1,4 +1,4 @@
-".source.js, .source.ts, .source.tsx":
+".source.js, .source.ts, .source.tsx, .source.js-semantic":
   "event handler":
     prefix: "on"
     body: """

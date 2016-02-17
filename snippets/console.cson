@@ -1,4 +1,4 @@
-".source.js, .source.ts, .source.tsx":
+".source.js, .source.ts, .source.tsx, .source.js-semantic":
   "console.log":
     prefix: "cl"
     body: "console.log(${0})"
