@@ -23,7 +23,7 @@
   "process nextTick":
     prefix: "nt"
     body: """
-    process.nextTick(function () {
+    process.nextTick(() => {
     \t${1:}
     });
     """
