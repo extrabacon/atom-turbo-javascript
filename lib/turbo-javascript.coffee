@@ -10,6 +10,8 @@ module.exports =
     atom.commands.add 'atom-text-editor',
       'turbo-javascript:end-line-comma': => @endLine(',', false)
     atom.commands.add 'atom-text-editor',
+      'turbo-javascript:end-line-dot': => @endLine('.', false)
+    atom.commands.add 'atom-text-editor',
       'turbo-javascript:end-new-line': => @endLine('', true)
     atom.commands.add 'atom-text-editor',
       'turbo-javascript:wrap-block': => @wrapBlock()
