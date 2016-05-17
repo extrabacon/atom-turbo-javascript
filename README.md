@@ -11,6 +11,9 @@ Terminates the current line with a semicolon.
 #### End Line with a comma `CTRL-,`
 Terminates the current line with a comma (great for object literals).
 
+#### End Line `CTRL-.`
+Terminates the current line with a dot.
+
 #### End New Line `CTRL-ENTER`
 Terminates the current line with a colon or semicolon, followed with a new line. A comma is inserted when the cursor is inside an object literal, otherwise a semicolon is inserted.
 
