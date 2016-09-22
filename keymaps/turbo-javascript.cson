@@ -10,5 +10,6 @@
 'atom-text-editor':
   'ctrl-;': 'turbo-javascript:end-line'
   'ctrl-,': 'turbo-javascript:end-line-comma'
+  'ctrl-.': 'turbo-javascript:end-line-dot'
   'ctrl-enter': 'turbo-javascript:end-new-line'
   'ctrl-b': 'turbo-javascript:wrap-block'
