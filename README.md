@@ -643,6 +643,10 @@ function (err, req, res, next) {
 'use strict';
 ```
 
+## Standardjs
+
+If you prefer automatic semicolon insertion, you might find **[atom-standardjs-snippets](https://github.com/gaboesquivel/atom-standardjs-snippets)** more suitable.
+
 # License
 
 The MIT License (MIT)
