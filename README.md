@@ -636,6 +636,28 @@ function (err, req, res, next) {
 }
 ```
 
+### Sinon
+
+#### `sbc⇥` sandbox.create
+```js
+sinon.sandbox.create();
+```
+
+#### `sbr⇥` sandbox.restore
+```js
+sandbox.restore();
+```
+
+#### `ac⇥` assert.called
+```js
+sinon.assert.called(${1:spy});
+```
+
+#### `acw⇥` assert.calledWith
+```js
+sinon.assert.calledWith(${1:spy}, ${2:args});
+```
+
 ### Miscellaneous
 
 #### `us⇥` use strict

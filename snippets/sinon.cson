@@ -1,0 +1,13 @@
+".source.js, .source.ts, .source.tsx, .source.js-semantic":
+  "sinon sandbox.create":
+    prefix: "sbc"
+    body: "sinon.sandbox.create();"
+  "sinon sandbox.restore":
+    prefix: "sbr"
+    body: "sandbox.restore();"
+  "sinon assert.called":
+    prefix: "ac"
+    body: "sinon.assert.called(${1:spy});"
+  "sinon assert.calledWith":
+    prefix: "acw"
+    body: "sinon.assert.calledWith(${1:spy}, ${2:args});"
