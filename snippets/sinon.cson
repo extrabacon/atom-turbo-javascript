@@ -1,0 +1,19 @@
+".source.js, .source.ts, .source.tsx, .source.js-semantic":
+  "sinon sandbox.create":
+    prefix: "sbc"
+    body: "sinon.sandbox.create();"
+  "sinon sandbox.restore":
+    prefix: "sbr"
+    body: "sandbox.restore();"
+  "sinon assert.called":
+    prefix: "ac"
+    body: "sinon.assert.called(${1:spy});"
+  "sinon assert.calledWith":
+    prefix: "acw"
+    body: "sinon.assert.calledWith(${1:spy}, ${2:args});"
+  "sinon sandbox.stub":
+    prefix: "sst"
+    body: "sandbox.stub(${1:object}, '${2:property}');"
+  "sinon sandbox.spy":
+    prefix: "ssp"
+    body: "sandbox.spy(${1:object}, '${2:property}');"
