@@ -658,6 +658,16 @@ sinon.assert.called(${1:spy});
 sinon.assert.calledWith(${1:spy}, ${2:args});
 ```
 
+#### `sst⇥` sandbox.stub
+```js
+sandbox.stub(${1:object}, '${2:prop}');
+```
+
+#### `ssp⇥` sandbox.spy
+```js
+sandbox.spy(${1:object}, '${2:prop}');
+```
+
 ### Miscellaneous
 
 #### `us⇥` use strict
