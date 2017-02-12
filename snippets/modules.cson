@@ -1,13 +1,13 @@
 ".source.js, .source.ts, .source.tsx, .source.js-semantic":
   "module export":
     prefix: "ex"
-    body: "export ${1:member};"
+    body: "export ${1:member}"
   "module default export":
     prefix: "exd"
-    body: "export default ${1:member};"
+    body: "export default ${1:member}"
   "import module":
     prefix: "im"
-    body: "import ${1:*} from '${2:module}';"
+    body: "import ${1:*} from '${2:module}'"
   "import module as":
     prefix: "ima"
-    body: "import ${1:*} as ${2:name} from '${3:module}';"
+    body: "import ${1:*} as ${2:name} from '${3:module}'"

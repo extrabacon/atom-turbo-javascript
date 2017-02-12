@@ -4,62 +4,62 @@
     body: """
     describe('${1:description}', function () {
     \t${0}
-    });
+    })
     """
   "context":
     prefix: "cont"
     body: """
     context('${1:description}', function () {
     \t${0}
-    });
+    })
     """
   "it":
     prefix: "it"
     body: """
     it('${1:description}', function () {
     \t${0}
-    });
+    })
     """
   "it synchronous":
     prefix: "its"
     body: """
     it('${1:description}', function () {
     \t${0}
-    });
+    })
     """
   "it asynchronous":
     prefix: "ita"
     body: """
     it('${1:description}', function (done) {
     \t${0}
-    \tdone();
-    });
+    \tdone()
+    })
     """
   "mocha before":
     prefix: "bf"
     body: """
     before(function () {
     \t${0}
-    });
+    })
     """
   "mocha beforeEach":
     prefix: "bfe"
     body: """
     beforeEach(function () {
     \t${0}
-    });
+    })
     """
   "mocha after":
     prefix: "aft"
     body: """
     after(function () {
     \t${0}
-    });
+    })
     """
   "mocha afterEach":
     prefix: "afe"
     body: """
     afterEach(function () {
     \t${0}
-    });
+    })
     """

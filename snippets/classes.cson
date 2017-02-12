@@ -13,7 +13,7 @@
     body: """
     class ${1:name} extends ${2:base} {
     \tconstructor(${3:arguments}) {
-    \t\tsuper(${3:arguments});
+    \t\tsuper(${3:arguments})
     \t\t${0}
     \t}
     }
@@ -22,6 +22,6 @@
     prefix: "ctor"
     body: """
     constructor(${1:arguments}) {
-    \tsuper(${1:arguments});${0}
+    \tsuper(${1:arguments})${0}
     }
     """

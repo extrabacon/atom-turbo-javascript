@@ -14,7 +14,7 @@
     body: """
     (function (${1:arguments}) {
     \t${0}
-    })(${2});
+    })(${2})
     """
   "function apply":
     prefix: "fa"

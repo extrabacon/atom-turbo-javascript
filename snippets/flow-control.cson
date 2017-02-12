@@ -93,8 +93,8 @@
     body: """
     switch (${1:expr}) {
     \tcase ${2:value}:
-    \t\treturn $0;
+    \t\treturn $0
     \tdefault:
-    \t\treturn;
+    \t\treturn
     }
     """

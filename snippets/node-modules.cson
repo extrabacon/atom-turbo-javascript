@@ -4,10 +4,10 @@
     body: "require('${1:module}')"
   "exports.member":
     prefix: "em"
-    body: "exports.${1:member} = ${2:value};"
+    body: "exports.${1:member} = ${2:value}"
   "module.exports":
     prefix: "me"
-    body: "module.exports = ${1:name};"
+    body: "module.exports = ${1:name}"
   "module as class":
     prefix: "mc"
     body: """
@@ -15,8 +15,8 @@
     \tfunction ${1:name}(${2:arguments}) {
     \t\t${0}
     \t}
-    \treturn ${1:name};
-    })();
+    \treturn ${1:name}
+    })()
 
-    module.exports = ${1:name};
+    module.exports = ${1:name}
     """
