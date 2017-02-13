@@ -1,10 +1,4 @@
 ".source.js, .source.ts, .source.tsx, .source.js-semantic":
-  "var statement":
-    prefix: "v"
-    body: "var ${1:name}"
-  "var assignment":
-    prefix: "v="
-    body: "var ${1:name} = ${2:value}"
   "let statement":
     prefix: "l"
     body: "let ${1:name}"

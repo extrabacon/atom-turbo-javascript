@@ -7,7 +7,7 @@
     body: "export default ${1:member}"
   "import module":
     prefix: "im"
-    body: "import ${1:*} from '${2:module}'"
-  "import module as":
-    prefix: "ima"
-    body: "import ${1:*} as ${2:name} from '${3:module}'"
+    body: "import ${1:module} from '${1:module}'"
+	"import local module":
+    prefix: "iml"
+    body: "import ${1:module} from './${2:path}'"

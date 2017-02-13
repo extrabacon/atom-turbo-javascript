@@ -33,20 +33,6 @@
     \t
     }
     """
-  "prototype method":
-    prefix: "proto"
-    body: """
-    ${1:Class}.prototype.${2:method} = function (${3:arguments}) {
-    \t${0}
-    };
-    """
-  "chain prototype method":
-    prefix: ".proto"
-    body: """
-    .prototype.${2:methodName} = function (${3:arguments}) {
-    \t${0}
-    }
-    """
   "Object.assign":
     prefix: "a"
     body: "Object.assign(${1:dest}, ${2:source})"
