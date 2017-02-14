@@ -20,15 +20,8 @@
     \t${0}
     })
     """
-  "it synchronous":
-    prefix: "its"
-    body: """
-    it('${1:description}', function () {
-    \t${0}
-    })
-    """
-  "it asynchronous":
-    prefix: "ita"
+  "it with callback":
+    prefix: "itc"
     body: """
     it('${1:description}', function (done) {
     \t${0}

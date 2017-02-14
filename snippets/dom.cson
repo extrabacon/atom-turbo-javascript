@@ -7,17 +7,17 @@
     })
     """
   "getElementById":
-    "prefix": "gi"
-    "body": "${1:document}.getElementById('${2:id}')"
+    prefix: "gi"
+    body: "${1:document}.getElementById('${2:id}')"
   "getElementsByClassName":
-    "prefix": "gc"
-    "body": "Array.from(${1:document}.getElementsByClassName('${2:class}'))"
+    prefix: "gc"
+    body: "Array.from(${1:document}.getElementsByClassName('${2:class}'))"
   "getElementsByTagName":
-    "prefix": "gt"
-    "body": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))"
+    prefix: "gt"
+    body: "Array.from(${1:document}.getElementsByTagName('${2:tag}'))"
   "querySelector":
-    "prefix": "qs"
-    "body": "${1:document}.querySelector('${2:selector}')"
+    prefix: "qs"
+    body: "${1:document}.querySelector('${2:selector}')"
   "querySelectorAll":
-    "prefix": "qsa"
-    "body": "Array.from(${1:document}.querySelectorAll('${2:selector}'))"
+    prefix: "qsa"
+    body: "Array.from(${1:document}.querySelectorAll('${2:selector}'))"
