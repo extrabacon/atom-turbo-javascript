@@ -1,6 +1,6 @@
 ".source.js, .source.ts, .source.tsx, .source.js-semantic":
   "class":
-    prefix: "cla"
+    prefix: "class"
     body: """
     class ${1:name} {
     \tconstructor(${2:arguments}) {
@@ -9,7 +9,7 @@
     }
     """
   "class extends":
-    prefix: "clax"
+    prefix: "classx"
     body: """
     class ${1:name} extends ${2:base} {
     \tconstructor(${3:arguments}) {
