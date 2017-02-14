@@ -26,6 +26,9 @@
     \t${0}
     }
     """
+  "Node callback":
+    prefix: "cbf"
+    body: "(err, ${1:value}) => {${0}}"
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
