@@ -243,7 +243,7 @@ ${1:iterable}.map((${2:item}) => {
 ```js
 ${1:iterable}.reduce((${2:previous}, ${3:current}) => {
   ${0}
-}${4:, initial});
+}, ${4:initial});
 ```
 
 #### `filter⇥` filter function (chainable)
