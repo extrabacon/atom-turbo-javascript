@@ -45,6 +45,11 @@ let ${1:name}
 let ${1:name} = ${2:value}
 ```
 
+#### `l={⇥` destructuring let assignment
+```js
+let { ${1: name} } = ${2:value}
+```
+
 #### `co⇥` const statement
 ```js
 const ${1:name}
@@ -53,6 +58,11 @@ const ${1:name}
 #### `co=⇥` const assignment
 ```js
 const ${1:name} = ${2:value}
+```
+
+#### `co={⇥` destructuring const assignment
+```js
+const { ${1:name} } = ${2:value}
 ```
 
 ### Flow Control

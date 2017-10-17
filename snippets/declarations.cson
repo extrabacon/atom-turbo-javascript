@@ -11,9 +11,15 @@
   "let assignment":
     prefix: "l="
     body: "let ${1:name} = ${2:value}"
+  "destructuring let assignment":
+    prefix: "l={"
+    body: "let { ${1: name} } = ${2:value}"
   "const statement":
     prefix: "co"
     body: "const ${1:name}"
   "const assignment":
     prefix: "co="
     body: "const ${1:name} = ${2:value}"
+  "destructuring const assignment":
+    prefix: "co={"
+    body: "const { ${1:name} } = ${2:value}"
