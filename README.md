@@ -17,6 +17,9 @@ Terminates the current line with a colon or semicolon, followed with a new line.
 #### Easy Blocks `CTRL-B`
 Creates a statement block `{ ... }` with the selected text placed inside and properly indented. If the selection is already wrapped with a block, the block is removed and its content is unindented.
 
+#### HTML Ecape Blocks (EJS) `CTRL->`
+Creates an HTML escape block `<%= %>` with the selected text placed inside and properly spaced.  If the selection is already wrapped with an HTML escape block, the block is removed.
+
 ## Snippets
 
 Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".
