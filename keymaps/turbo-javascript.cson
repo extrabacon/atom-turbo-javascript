@@ -9,7 +9,7 @@
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-text-editor':
   'ctrl-;': 'turbo-javascript:end-line'
-  # 'ctrl-,': 'turbo-javascript:end-line-comma'
+  'ctrl-,': 'turbo-javascript:end-line-comma'
   'ctrl-enter': 'turbo-javascript:end-new-line'
   'ctrl-b': 'turbo-javascript:wrap-block'
   'ctrl->': 'turbo-javascript:html-escape'
