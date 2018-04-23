@@ -8,6 +8,7 @@
         {'label': 'End line with semicolon', 'command': 'turbo-javascript:end-line'}
         {'label': 'End line with comma', 'command': 'turbo-javascript:end-line-comma'}
         {'label': 'Insert or remove block', 'command': 'turbo-javascript:wrap-block'}
+        {'label': 'Insert or remove HTML escape block', 'command': 'turbo-javascript:html-escape'}
       ]
     ]
   }

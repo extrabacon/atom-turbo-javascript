@@ -13,6 +13,8 @@ module.exports =
       'turbo-javascript:end-new-line': => @endLine('', true)
     atom.commands.add 'atom-text-editor',
       'turbo-javascript:wrap-block': => @wrapBlock()
+    atom.commands.add 'atom-text-editor',
+      'turbo-javascript:html-escape': => @htmlEscape()
 
   endLine: (terminator, insertNewLine) ->
     editor = atom.workspace.getActiveTextEditor()
@@ -52,3 +54,26 @@ module.exports =
       editor.moveRight()
       editor.moveUp()
       editor.moveToEndOfLine()
+
+  htmlEscape: () ->
+    editor = atom.workspace.getActiveTextEditor()
+    rangesToWrap = editor.getSelectedBufferRanges().filter((r) -> !r.isEmpty())
+    if rangesToWrap.length
+      rangesToWrap.sort((a, b) ->
+        return if a.start.row > b.start.row then -1 else 1
+      ).forEach((range) ->
+        text = editor.getTextInBufferRange(range)
+        if (/\<\%\=\s*/.test(text) && /\s*\%\>*/.test(text))
+          # unwrap each selection from its block
+          editor.setTextInBufferRange(range, text.replace(/\{\s*/, '').replace(/\s*\}/, ''))
+        else
+          # wrap each selection in a block
+          editor.setTextInBufferRange(range, '<%= ' + text + ' %>')
+          editor.moveToEndOfWord()
+          editor.moveToEndOfWord()
+          editor.moveRight(3)
+      )
+      editor.autoIndentSelectedRows()
+    else
+      editor.insertText('<%=  %>')
+      editor.moveLeft(3)
